@@ -76,7 +76,7 @@ export function RequestInformationButton() {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <Button 
-          className="w-full bg-green-600 text-white hover:bg-green-700 transition-colors duration-300 shadow-md rounded-lg font-semibold text-lg py-3 transform hover:scale-105 active:scale-95 transition-transform"
+          className="w-full bg-green-600 text-white hover:bg-green-700 transition-all duration-300 shadow-md rounded-lg font-semibold text-lg py-3 transform hover:scale-105 active:scale-95"
           variant="default" 
           size="lg"
         >
