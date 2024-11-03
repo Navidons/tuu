@@ -148,7 +148,7 @@ export default function InformationTechnology() {
             <p className="mb-8 max-w-2xl mx-auto">
               Join our Information Technology program and gain the skills to lead in the digital transformation of businesses and organizations.
               <span className="block text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Teknoolojiyada Macluumaadka oo hel xirfadaha aad ku hogaamin karto isbedelka dhijitaalka ah ee ganacsiyada iyo hay'adaha.
+                Ku soo biir barnaamijkeena Teknoolojiyada Macluumaadka oo hel xirfadaha aad ku hogaamin karto isbedelka dhijitaalka ah ee ganacsiyada iyo hay&apos;adaha.
               </span>
             </p>
             <div className="flex gap-4 justify-center">

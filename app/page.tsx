@@ -14,6 +14,7 @@ import { OurHistoryButton } from "./buttons/our-history-button";
 import { MeetOurFacultyButton } from "./buttons/meet-our-faculty-button";
 import { ApplyForAdmissionButton } from "./buttons/apply-for-admission-button";
 import { RequestInformationButton } from "./buttons/request-information-button";
+import Image from 'next/image';
 
 const programs = [
   {
@@ -105,10 +106,12 @@ export default function LandingPage() {
       <main className="flex-1">
         <section className="relative h-[80vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/university-campus.jpg"
               alt="Campus"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -204,10 +207,12 @@ export default function LandingPage() {
                 </div>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/university-campus.jpg"
                   alt="Campus"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 w-full h-full"
                 />
               </div>
             </div>

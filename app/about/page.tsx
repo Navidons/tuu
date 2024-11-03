@@ -40,7 +40,7 @@ export default function AboutPage() {
                   centers of higher education. Our journey reflects the resilience and aspirations of our nation,
                   as we&apos;ve continuously evolved to meet the changing needs of our students and society.
                   <span className="block text-sm text-red-500 hover:underline transition-all duration-300">
-                    La aasaasay 2021, Jaamacadda Midnimada waxay ka soo kortay hay'ad yar ilaa mid ka mid ah xarumaha
+                    La aasaasay 2021, Jaamacadda Midnimada waxay ka soo kortay hay&apos;ad yar ilaa mid ka mid ah xarumaha
                     ugu horreeya ee waxbarashada sare ee Somaliland. Safarkeenu wuxuu muujinayaa adkaysiga iyo himilooyinka
                     qarankayaga, maadaama aan si joogto ah ugu horumarinay inaan buuxinno baahiyaha isbeddelaya ee ardaydeena iyo bulshada.
                   </span>
@@ -57,7 +57,7 @@ export default function AboutPage() {
                   through excellence in teaching, research, and community engagement.
                   <span className="block text-sm text-red-500 hover:underline transition-all duration-300">
                     Jaamacadda Midnimada waxay u heellan tahay bixinta waxbarasho tayo sare leh oo awood u siinaysa ardaydeena
-                    inay noqdaan hogaamiyeyaal, hal-abuurayaal, iyo muwaadiniinta mas'uulka ah. Waxaan u dadaalnaa inaan
+                    inay noqdaan hogaamiyeyaal, hal-abuurayaal, iyo muwaadiniinta mas&apos;uulka ah. Waxaan u dadaalnaa inaan
                     gacan ka geysanno horumarinta Somaliland iyada oo loo marayo waxbarid heer sare ah, cilmi-baaris, iyo ka qaybgalka bulshada.
                   </span>
                 </p>
@@ -181,7 +181,7 @@ export default function AboutPage() {
                   <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Xarunteena</span>
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  The Unity University's modern campus in Hargeisa provides state-of-the-art facilities for learning,
+                  The Unity University&apos;s modern campus in Hargeisa provides state-of-the-art facilities for learning,
                   research, and student life. Our campus features advanced laboratories, a comprehensive library,
                   comfortable dormitories, and spaces for sports and recreation.
                   <span className="block text-sm text-red-500 hover:underline transition-all duration-300">
