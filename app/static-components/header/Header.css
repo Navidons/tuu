@@ -1,0 +1,11 @@
+@keyframes colorChange {
+  0% { color: #ff0000 }
+  25% { color: #fb7185 }
+  50% { color: #4ade80 }
+  75% { color: #c084fc }
+  100% { color: #ff0000 }
+}
+
+.social-icon {
+  animation: colorChange 4s ease-in-out infinite;
+} 

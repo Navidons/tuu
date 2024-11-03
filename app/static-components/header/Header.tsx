@@ -136,20 +136,20 @@ export function Header() {
           </div>
           
           <div className="flex space-x-4">
-            <Link href="https://www.facebook.com/theunityuniversity/" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-              <Facebook className="h-4 w-4" />
+            <Link href="https://www.facebook.com/theunityuniversity/" className="animate-pulse hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              <Facebook className="h-4 w-4 animate-[colorChange_4s_ease-in-out_infinite]" style={{animation: 'colorChange 4s ease-in-out infinite'}} />
             </Link>
-            <Link href="https://x.com/ProfPLOLumumba/status/1605872680317616128?lang=en" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-              <Twitter className="h-4 w-4" />
+            <Link href="https://x.com/ProfPLOLumumba/status/1605872680317616128?lang=en" className="animate-pulse hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              <Twitter className="h-4 w-4 animate-[colorChange_4s_ease-in-out_infinite]" style={{animation: 'colorChange 4s ease-in-out infinite', animationDelay: '0.8s'}} />
             </Link>
-            <Link href="https://www.instagram.com/p/Cmd3K5Oj1D1/?img_index=1" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-              <Instagram className="h-4 w-4" />
+            <Link href="https://www.instagram.com/p/Cmd3K5Oj1D1/?img_index=1" className="animate-pulse hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              <Instagram className="h-4 w-4 animate-[colorChange_4s_ease-in-out_infinite]" style={{animation: 'colorChange 4s ease-in-out infinite', animationDelay: '1.6s'}} />
             </Link>
-            <Link href="https://www.linkedin.com/company/the-unity-university/?originalSubdomain=so" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-4 w-4" />
+            <Link href="https://www.linkedin.com/company/the-unity-university/?originalSubdomain=so" className="animate-pulse hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-4 w-4 animate-[colorChange_4s_ease-in-out_infinite]" style={{animation: 'colorChange 4s ease-in-out infinite', animationDelay: '2.4s'}} />
             </Link>
-            <Link href="https://www.youtube.com/watch?v=8vBnxHefYZs" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-              <Youtube className="h-4 w-4" />
+            <Link href="https://www.youtube.com/watch?v=8vBnxHefYZs" className="animate-pulse hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              <Youtube className="h-4 w-4 animate-[colorChange_4s_ease-in-out_infinite]" style={{animation: 'colorChange 4s ease-in-out infinite', animationDelay: '3.2s'}} />
             </Link>
           </div>
         </div>
