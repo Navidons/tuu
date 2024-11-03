@@ -2,12 +2,12 @@
 import { Header } from "../static-components/header/Header"
 import { Footer } from "../static-components/footer/Footer"
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar, Search, Globe,} from "lucide-react"
 import { ReadMoreNewsEventButton } from "../buttons/read-more-news-event-button"
+import Image from 'next/image'
 
 const newsAndEvents = [
   { 
@@ -62,8 +62,8 @@ const newsAndEvents = [
     date: "2024-05-15", 
     description: "Explore the creativity of our students at this year's art exhibition.", 
     soDescription: "Sahaminta hal-abuurka ardaydeena bandhigga farshaxanka ee sanadkan.",
-    fullContent: "Unity University proudly presents our annual Student Art Exhibition, showcasing the diverse talents and creativity of our student body. This year's exhibition, themed 'Unity in Diversity,' will feature a wide range of artistic mediums including paintings, sculptures, digital art, and multimedia installations. The event will be held in our newly renovated campus gallery from May 15th to June 1st, 2024. Visitors will have the opportunity to meet the artists, participate in interactive workshops, and even purchase selected artworks. Join us in celebrating the artistic achievements of our students and the power of art to unite and inspire.",
-    soFullContent: "Jaamacadda Midnimada waxay si sharaf leh u soo bandhigaysaa Bandhigga Farshaxanka Ardayda ee sanadlaha ah, kaas oo muujinaya hibada kala duwan iyo hal-abuurka ardaydeena. Bandhigga sanadkan, oo mowduuciisu yahay 'Midnimada Kala Duwanaanshaha,' wuxuu soo bandhigi doonaa noocyo kala duwan oo farshaxan ah oo ay ka mid yihiin sawirrada, sawirada la qoray, farshaxanka dijitaalka ah, iyo rakibaadyada multimedia-da. Dhacdadu waxay ka dhici doontaa galareega jaamacaddeena ee dhowaan la cusbooneysiiyey laga bilaabo 15-ka Maajo ilaa 1-da Juun, 2024. Booqdayaashu waxay fursad u heli doonaan inay la kulmaan farshaxaniistaha, ka qaybqaataan aqoon-isweydaarsiyo wax-ku-ool ah, oo xitaa iibsadaan farshaxanno la doortay. Nala soo qeybgal dabaaldegga guulaha farshaxanka ee ardaydeena iyo awoodda farshaxanku u leeyahay inuu mideeyo oo uu dhiirrigelin."
+    fullContent: "Unity University proudly presents our annual Student Art Exhibition, showcasing the diverse talents and creativity of our student body. This year's exhibition, themed &apos;Unity in Diversity,&apos; will feature a wide range of artistic mediums including paintings, sculptures, digital art, and multimedia installations. The event will be held in our newly renovated campus gallery from May 15th to June 1st, 2024. Visitors will have the opportunity to meet the artists, participate in interactive workshops, and even purchase selected artworks. Join us in celebrating the artistic achievements of our students and the power of art to unite and inspire.",
+    soFullContent: "Jaamacadda Midnimada waxay si sharaf leh u soo bandhigaysaa Bandhigga Farshaxanka Ardayda ee sanadlaha ah, kaas oo muujinaya hibada kala duwan iyo hal-abuurka ardaydeena. Bandhigga sanadkan, oo mowduuciisu yahay &apos;Midnimada Kala Duwanaanshaha,&apos; wuxuu soo bandhigi doonaa noocyo kala duwan oo farshaxan ah oo ay ka mid yihiin sawirrada, sawirada la qoray, farshaxanka dijitaalka ah, iyo rakibaadyada multimedia-da. Dhacdadu waxay ka dhici doontaa galareega jaamacaddeena ee dhowaan la cusbooneysiiyey laga bilaabo 15-ka Maajo ilaa 1-da Juun, 2024. Booqdayaashu waxay fursad u heli doonaan inay la kulmaan farshaxaniistaha, ka qaybqaataan aqoon-isweydaarsiyo wax-ku-ool ah, oo xitaa iibsadaan farshaxanno la doortay. Nala soo qeybgal dabaaldegga guulaha farshaxanka ee ardaydeena iyo awoodda farshaxanku u leeyahay inuu mideeyo oo uu dhiirrigelin."
   },
   { 
     id: 6, 
@@ -73,8 +73,8 @@ const newsAndEvents = [
     date: "2024-02-28", 
     description: "Unity University introduces a new scholarship program to support talented students.", 
     soDescription: "Jaamacadda Midnimada waxay soo bandhigtay barnaamij cusub oo deeqo-waxbarasho ah oo loogu talagalay inuu taageero ardayda hibada leh.",
-    fullContent: "Unity University is proud to announce the launch of our new comprehensive scholarship program, 'Empowering Future Leaders.' This initiative aims to provide financial support to talented and deserving students who demonstrate exceptional academic potential and leadership qualities. The program will offer full and partial scholarships across all our academic disciplines, with a special focus on supporting students from underrepresented communities and those pursuing studies in high-demand fields. Recipients will not only receive financial aid but also mentorship opportunities, leadership training, and internship placements. This scholarship program reflects our commitment to making quality higher education accessible to all and nurturing the next generation of leaders in East Africa.",
-    soFullContent: "Jaamacadda Midnimada waxay ku faanaysaa inay ku dhawaaqdo bilaabista barnaamijkeena cusub ee deeqaha waxbarasho ee dhammaystiran, 'Awood u siinta Hoggaamiyeyaasha Mustaqbalka.' Hindisahani wuxuu ujeedkiisu yahay in la siiyo taageero dhaqaale arday hibooyinka leh oo mudan kuwaas oo muujiya kartida waxbarasho ee sarraysa iyo sifooyinka hoggaaminta. Barnaamijku wuxuu bixin doonaa deeqo waxbarasho oo buuxa iyo qayb ahba dhammaan qeybaha waxbarashadeena, iyadoo diiradda la saarayo taageeridda ardayda ka socota bulshooyinka aan la matalin iyo kuwa wax ka baranaya dhinacyada baahida sare leh. Kuwa hela ma heli doonaan kaliya kaalmada dhaqaale laakiin sidoo kale fursadaha la-talinta, tababarka hoggaaminta, iyo meeleynta tababbarka. Barnaamijkan deeqda waxbarasho wuxuu muujinayaa ballanqaadkeena ah in aan waxbarashada sare ee tayo leh u fudayno dhammaan oo aan kobcino jiilka xiga ee hoggaamiyeyaasha Bariga Afrika."
+    fullContent: "Unity University is proud to announce the launch of our new comprehensive scholarship program, &apos;Empowering Future Leaders.&apos; This initiative aims to provide financial support to talented and deserving students who demonstrate exceptional academic potential and leadership qualities. The program will offer full and partial scholarships across all our academic disciplines, with a special focus on supporting students from underrepresented communities and those pursuing studies in high-demand fields. Recipients will not only receive financial aid but also mentorship opportunities, leadership training, and internship placements. This scholarship program reflects our commitment to making quality higher education accessible to all and nurturing the next generation of leaders in East Africa.",
+    soFullContent: "Jaamacadda Midnimada waxay ku faanaysaa inay ku dhawaaqdo bilaabista barnaamijkeena cusub ee deeqaha waxbarasho ee dhammaystiran, &apos;Awood u siinta Hoggaamiyeyaasha Mustaqbalka.&apos; Hindisahani wuxuu ujeedkiisu yahay in la siiyo taageero dhaqaale arday hibooyinka leh oo mudan kuwaas oo muujiya kartida waxbarasho ee sarraysa iyo sifooyinka hoggaaminta. Barnaamijku wuxuu bixin doonaa deeqo waxbarasho oo buuxa iyo qayb ahba dhammaan qeybaha waxbarashadeena, iyadoo diiradda la saarayo taageeridda ardayda ka socota bulshooyinka aan la matalin iyo kuwa wax ka baranaya dhinacyada baahida sare leh. Kuwa hela ma heli doonaan kaliya kaalmada dhaqaale laakiin sidoo kale fursadaha la-talinta, tababarka hoggaaminta, iyo meeleynta tababbarka. Barnaamijkan deeqda waxbarasho wuxuu muujinayaa ballanqaadkeena ah in aan waxbarashada sare ee tayo leh u fudayno dhammaan oo aan kobcino jiilka xiga ee hoggaamiyeyaasha Bariga Afrika."
   },
 ]
 
@@ -95,7 +95,8 @@ export default function NewsAndEventsPage() {
       <Header />
 
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative" style={{ backgroundImage: "url('/university-banner.jpg')" }}>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative">
+          <Image src="/university-banner.jpg" alt="University Banner" layout="fill" objectFit="cover" className="absolute inset-0" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center space-y-4 text-center">

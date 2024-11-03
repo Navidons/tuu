@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Users, Briefcase, TrendingUp } from "lucide-react"
+import Image from 'next/image'
 
 export default function HumanResourceManagement() {
   return (
@@ -17,10 +18,11 @@ export default function HumanResourceManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Human Resource Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -32,9 +34,9 @@ export default function HumanResourceManagement() {
               </span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Develop the skills to lead and manage an organization's most valuable asset: its people
+              Develop the skills to lead and manage an organization&apos;s most valuable asset: its people
               <span className="block text-red-200">
-                Horumarso xirfadaha hogaaminta iyo maaraynta hantida ugu qiimaha badan ee hay'adda: shaqaalaheeda
+                Horumarso xirfadaha hogaaminta iyo maaraynta hantida ugu qiimaha badan ee hay&apos;adda: shaqaalaheeda
               </span>
             </p>
           </div>
@@ -51,9 +53,9 @@ export default function HumanResourceManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Human Resource Management program prepares you to become a strategic partner in organizational success. You'll learn to effectively manage talent, foster employee development, and create positive work environments.
+                  Our Human Resource Management program prepares you to become a strategic partner in organizational success. You&apos;ll learn to effectively manage talent, foster employee development, and create positive work environments.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Maamulka Shaqaalaha wuxuu kuu diyaarinayaa inaad noqoto lamaane istaraatiiji ah oo guusha hay'adda ah. Waxaad baran doontaa sida wax ku ool ah loogu maareeyo kartida, kor loogu qaado horumarinta shaqaalaha, oo loo abuuro jawi shaqo oo wanaagsan.
+                    Barnaamijkeena Maamulka Shaqaalaha wuxuu kuu diyaarinayaa inaad noqoto lamaane istaraatiiji ah oo guusha hay&apos;adda ah. Waxaad baran doontaa sida wax ku ool ah loogu maareeyo kartida, kor loogu qaado horumarinta shaqaalaha, oo loo abuuro jawi shaqo oo wanaagsan.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +72,11 @@ export default function HumanResourceManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Human Resource Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -95,7 +98,7 @@ export default function HumanResourceManagement() {
                   title: "Strategic HR Leadership",
                   soTitle: "Hogaaminta Istaraatiijiga ah ee HR",
                   description: "Develop skills to become a strategic partner in organizational success.",
-                  soDescription: "Horumarso xirfadaha aad ku noqon karto lamaane istaraatiiji ah oo guusha hay'adda ah.",
+                  soDescription: "Horumarso xirfadaha aad ku noqon karto lamaane istaraatiiji ah oo guusha hay&apos;adda ah.",
                 },
                 {
                   icon: <Briefcase className="h-10 w-10 text-red-600" />,
@@ -145,7 +148,7 @@ export default function HumanResourceManagement() {
             <p className="mb-8 max-w-2xl mx-auto">
               Join our Human Resource Management program and become a key player in shaping organizational culture and driving employee success.
               <span className="block text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Maamulka Shaqaalaha oo noqo ciyaaryahan muhiim ah oo qaabeynaya dhaqanka hay'adda iyo hoggaaminta guusha shaqaalaha.
+                Ku soo biir barnaamijkeena Maamulka Shaqaalaha oo noqo ciyaaryahan muhiim ah oo qaabeynaya dhaqanka hay&apos;adda iyo hoggaaminta guusha shaqaalaha.
               </span>
             </p>
             <div className="flex gap-4 justify-center">

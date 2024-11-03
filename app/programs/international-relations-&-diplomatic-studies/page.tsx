@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Globe, Users, Briefcase } from "lucide-react"
+import Image from 'next/image'
 
 export default function InternationalRelationsAndDiplomaticStudies() {
   return (
@@ -17,10 +18,12 @@ export default function InternationalRelationsAndDiplomaticStudies() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="International Relations and Diplomatic Studies"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +54,7 @@ export default function InternationalRelationsAndDiplomaticStudies() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our International Relations & Diplomatic Studies program prepares you for a career in global affairs. You'll gain a deep understanding of international politics, diplomacy, and global economic systems, equipping you to address complex global challenges.
+                  Our International Relations & Diplomatic Studies program prepares you for a career in global affairs. You&apos;ll gain a deep understanding of international politics, diplomacy, and global economic systems, equipping you to address complex global challenges.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Xiriirrada Caalamiga & Daraasaadka Diblomaasiyada wuxuu kuu diyaarinayaa xirfad ku aadan arrimaha caalamiga ah. Waxaad heli doontaa faham qoto dheer oo ku saabsan siyaasadda caalamiga ah, diblomaasiyada, iyo nidaamyada dhaqaalaha adduunka, taas oo kuu diyaarinaysa inaad wajahdo caqabadaha adag ee caalamiga ah.
                   </span>
@@ -70,10 +73,12 @@ export default function InternationalRelationsAndDiplomaticStudies() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="International Relations and Diplomatic Studies Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 w-full h-full"
                 />
               </div>
             </div>

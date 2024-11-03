@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Heart, Globe, Activity } from "lucide-react"
+import Image from 'next/image'
 
 export default function PublicHealth() {
   return (
@@ -17,10 +18,11 @@ export default function PublicHealth() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Public Health"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function PublicHealth() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Public Health program prepares you to address critical health challenges on a population level. You'll gain expertise in epidemiology, health policy, environmental health, and community health promotion to make a significant impact on societal well-being.
+                  Our Public Health program prepares you to address critical health challenges on a population level. You&apos;ll gain expertise in epidemiology, health policy, environmental health, and community health promotion to make a significant impact on societal well-being.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Caafimaadka Dadweynaha wuxuu kuu diyaarinayaa inaad wajahdo caqabadaha caafimaad ee muhiimka ah heerka dadweynaha. Waxaad heli doontaa aqoon ku saabsan cilmiga faafidda cudurrada, siyaasadda caafimaadka, caafimaadka deegaanka, iyo kor u qaadida caafimaadka bulshada si aad u sameyso saamayn weyn oo ku aadan fayo-qabka bulshada.
                   </span>
@@ -70,10 +72,11 @@ export default function PublicHealth() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Public Health Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Target, Clock, Users } from "lucide-react"
+import Image from 'next/image'
 
 export default function ProjectPlanningAndManagement() {
   return (
@@ -17,10 +18,11 @@ export default function ProjectPlanningAndManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Project Planning and Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function ProjectPlanningAndManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Project Planning & Management program equips you with the skills to lead complex projects from conception to completion. You'll learn to develop project strategies, manage resources effectively, and deliver results on time and within budget across various industries.
+                  Our Project Planning & Management program equips you with the skills to lead complex projects from conception to completion. You&apos;ll learn to develop project strategies, manage resources effectively, and deliver results on time and within budget across various industries.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Qorsheynta & Maaraynta Mashruuca wuxuu ku siinayaa xirfadaha aad ku hoggaamin karto mashruucyo adag laga bilaabo fikradda ilaa dhammaadka. Waxaad baran doontaa inaad horumariso xeeladaha mashruuca, si wax ku ool ah u maamusho kheyraadka, oo aad u gaarsiin natiijooyin waqtiga la rabay iyo miisaaniyadda la qorsheeyay ee warshadaha kala duwan.
                   </span>
@@ -70,10 +72,11 @@ export default function ProjectPlanningAndManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Project Planning and Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

@@ -17,6 +17,7 @@ import {
   FileText,
   Download,
 } from "lucide-react";
+import Image from 'next/image';
 
 const publications = [
   {
@@ -79,8 +80,14 @@ export default function DownloadsAndPublicationsPage() {
       <main className="flex-1">
         <section
           className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative"
-          style={{ backgroundImage: "url('/university-banner.jpg')" }}
         >
+          <Image
+            src="/university-banner.jpg"
+            alt="University Banner"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0"
+          />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center space-y-4 text-center">

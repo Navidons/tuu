@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Code, Layers, Users } from "lucide-react"
+import Image from 'next/image'
 
 export default function SoftwareEngineering() {
   return (
@@ -17,10 +18,11 @@ export default function SoftwareEngineering() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Software Engineering"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function SoftwareEngineering() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Software Engineering program prepares you to become a skilled professional in the dynamic field of software development. You'll learn to design, implement, and maintain complex software systems using industry-standard methodologies and cutting-edge technologies.
+                  Our Software Engineering program prepares you to become a skilled professional in the dynamic field of software development. You&apos;ll learn to design, implement, and maintain complex software systems using industry-standard methodologies and cutting-edge technologies.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Injineernimada Software-ka wuxuu kuu diyaarinayaa inaad noqoto xirfadle aqoon leh oo ku jira goobta horumarinta software-ka ee isbedelka badan. Waxaad baran doontaa sida loo naqshadeynayo, loo hirgelinayo, oo loo ilaalinayo nidaamyada software-ka ee kakan adiga oo isticmaalaya hab-raacyada heerka warshadda iyo teknoolojiyada ugu dambeeyay.
                   </span>
@@ -70,10 +72,11 @@ export default function SoftwareEngineering() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Software Engineering Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

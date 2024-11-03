@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, TrendingUp, Globe, Target } from "lucide-react"
+import Image from 'next/image'
 
 export default function Marketing() {
   return (
@@ -17,10 +18,11 @@ export default function Marketing() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Marketing"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function Marketing() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Marketing program equips you with the skills to understand consumer behavior, develop effective marketing strategies, and drive business growth in the digital age. You'll learn to create compelling campaigns, analyze market trends, and leverage digital platforms for brand success.
+                  Our Marketing program equips you with the skills to understand consumer behavior, develop effective marketing strategies, and drive business growth in the digital age. You&apos;ll learn to create compelling campaigns, analyze market trends, and leverage digital platforms for brand success.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Suuq-geynta wuxuu ku siinayaa xirfadaha aad ku fahmi karto dabeecadda macmiilka, horumarinta xeeladaha suuq-geynta wax ku oolka ah, iyo hoggaaminta koboca ganacsiga ee casriga ah. Waxaad baran doontaa inaad abuurto ololayaal soo jiidanaya, falanqeyso isbedelada suuqa, oo aad u isticmaasho madallada dhijitaalka ah guusha calaamadda.
                   </span>
@@ -70,10 +72,11 @@ export default function Marketing() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Marketing Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

@@ -14,7 +14,6 @@ import { OurHistoryButton } from "./buttons/our-history-button";
 import { MeetOurFacultyButton } from "./buttons/meet-our-faculty-button";
 import { ApplyForAdmissionButton } from "./buttons/apply-for-admission-button";
 import { RequestInformationButton } from "./buttons/request-information-button";
-import { useState } from "react";
 
 const programs = [
   {
@@ -100,10 +99,6 @@ const programs = [
 ];
 
 export default function LandingPage() {
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [hoveredFaculty, setHoveredFaculty] = useState<string | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <div className="flex flex-col min-h-screen">
       <Header />

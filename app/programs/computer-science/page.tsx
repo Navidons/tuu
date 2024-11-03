@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Code, Database, Globe } from "lucide-react"
+import Image from 'next/image'
 
 
 export default function ComputerScience() {
@@ -18,10 +19,11 @@ export default function ComputerScience() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Computer Science"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -52,9 +54,9 @@ export default function ComputerScience() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Computer Science program prepares you for a dynamic career in technology. You'll gain a strong foundation in programming, algorithms, data structures, and software engineering principles. Our curriculum emphasizes both theoretical knowledge and practical skills, ensuring you're ready for the challenges of the tech industry.
+                  Our Computer Science program prepares you for a dynamic career in technology. You&apos;ll gain a strong foundation in programming, algorithms, data structures, and software engineering principles. Our curriculum emphasizes both theoretical knowledge and practical skills, ensuring you&apos;re ready for the challenges of the tech industry.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Sayniska Kombuyuutarka wuxuu kuu diyaarinayaa xirfad firfircoon oo teknoolojiyada ah. Waxaad heli doontaa aasaas adag oo ku saabsan barnaamij-sameynta, algorithms-ka, qaab-dhismeedyada xogta, iyo mabaadi'da injineernimada software-ka. Manhajkeenu wuxuu xoogga saarayaa labadaba aqoonta cilmiga iyo xirfadaha wax ku oolka ah, si loo hubiyo inaad diyaar u tahay caqabadaha warshadda teknoolojiyada.
+                    Barnaamijkeena Sayniska Kombuyuutarka wuxuu kuu diyaarinayaa xirfad firfircoon oo teknoolojiyada ah. Waxaad heli doontaa aasaas adag oo ku saabsan barnaamij-sameynta, algorithms-ka, qaab-dhismeedyada xogta, iyo mabaadi&apos;da injineernimada software-ka. Manhajkeenu wuxuu xoogga saarayaa labadaba aqoonta cilmiga iyo xirfadaha wax ku oolka ah, si loo hubiyo inaad diyaar u tahay caqabadaha warshadda teknoolojiyada.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -71,10 +73,11 @@ export default function ComputerScience() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Computer Science Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

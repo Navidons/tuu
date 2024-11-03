@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, MessageSquare, Globe, TrendingUp } from "lucide-react"
+import Image from 'next/image'
 
 export default function PublicRelationsAndMediaManagement() {
   return (
@@ -17,10 +18,11 @@ export default function PublicRelationsAndMediaManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Public Relations and Media Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function PublicRelationsAndMediaManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Public Relations & Media Management program equips you with the skills to navigate the complex world of modern communications. You'll learn to craft compelling messages, manage brand reputations, and leverage digital platforms for effective public relations strategies.
+                  Our Public Relations & Media Management program equips you with the skills to navigate the complex world of modern communications. You&apos;ll learn to craft compelling messages, manage brand reputations, and leverage digital platforms for effective public relations strategies.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Xiriirka Dadweynaha & Maamulka Warbaahinta wuxuu ku siinayaa xirfadaha aad kula tacaali karto adduunka adag ee isgaarsiinta casriga ah. Waxaad baran doontaa inaad abuurto farriimo soo jiidanaya, maarayso sumcadda calaamadda, oo u isticmaasho madallada dhijitaalka ah xeeladaha wax ku oolka ah ee xiriirka dadweynaha.
                   </span>
@@ -70,10 +72,11 @@ export default function PublicRelationsAndMediaManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Public Relations and Media Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

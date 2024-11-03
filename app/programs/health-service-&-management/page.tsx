@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Stethoscope, TrendingUp, Users } from "lucide-react"
+import Image from 'next/image'
 
 export default function HealthServiceAndManagement() {
   return (
@@ -17,10 +18,11 @@ export default function HealthServiceAndManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Health Service and Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,9 +53,9 @@ export default function HealthServiceAndManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Health Service & Management program prepares you for leadership roles in healthcare organizations. You'll gain expertise in healthcare policy, finance, operations management, and quality improvement to effectively lead and innovate in this dynamic field.
+                  Our Health Service & Management program prepares you for leadership roles in healthcare organizations. You&apos;ll gain expertise in healthcare policy, finance, operations management, and quality improvement to effectively lead and innovate in this dynamic field.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Adeegga Caafimaadka & Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee hay'adaha daryeelka caafimaadka. Waxaad heli doontaa aqoon ku saabsan siyaasadda daryeelka caafimaadka, maaliyadda, maamulka hawlgallada, iyo hagaajinta tayada si aad si wax ku ool ah ugu hoggaamiso oo aad ugu hal-abuurto goobtan isbedelka badan.
+                    Barnaamijkeena Adeegga Caafimaadka & Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee hay&apos;adaha daryeelka caafimaadka. Waxaad heli doontaa aqoon ku saabsan siyaasadda daryeelka caafimaadka, maaliyadda, maamulka hawlgallada, iyo hagaajinta tayada si aad si wax ku ool ah ugu hoggaamiso oo aad ugu hal-abuurto goobtan isbedelka badan.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +72,11 @@ export default function HealthServiceAndManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Health Service and Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -102,14 +105,14 @@ export default function HealthServiceAndManagement() {
                   title: "Leadership Development",
                   soTitle: "Horumarinta Hoggaaminta",
                   description: "Develop skills to lead and innovate in healthcare organizations.",
-                  soDescription: "Horumarso xirfadaha aad ku hoggaamin karto oo aad ku hal-abuur ku samayn karto hay'adaha daryeelka caafimaadka.",
+                  soDescription: "Horumarso xirfadaha aad ku hoggaamin karto oo aad ku hal-abuur ku samayn karto hay&apos;adaha daryeelka caafimaadka.",
                 },
                 {
                   icon: <Users className="h-10 w-10 text-red-600" />,
                   title: "Industry Connections",
                   soTitle: "Xiriirrada Warshadaha",
                   description: "Benefit from our partnerships with leading healthcare providers.",
-                  soDescription: "Ka faa'iideyso iskaashigayaga bixiyeyaasha daryeelka caafimaadka ee hormuudka ah.",
+                  soDescription: "Ka faa&apos;iideyso iskaashigayaga bixiyeyaasha daryeelka caafimaadka ee hormuudka ah.",
                 },
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">

@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Briefcase, TrendingUp, Globe } from "lucide-react"
+import Image from 'next/image'
 
 export default function BusinessAdministration() {
   return (
@@ -17,10 +18,11 @@ export default function BusinessAdministration() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Business Administration"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,9 +53,9 @@ export default function BusinessAdministration() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Business Administration program prepares you for leadership roles in various industries. You'll gain a comprehensive understanding of business principles, management strategies, and global market dynamics.
+                  Our Business Administration program prepares you for leadership roles in various industries. You&apos;ll gain a comprehensive understanding of business principles, management strategies, and global market dynamics.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Maamulka Ganacsiga wuxuu kuu diyaarinayaa doorarka hoggaaminta warshadaha kala duwan. Waxaad heli doontaa faham buuxa oo ku saabsan mabaadi'da ganacsiga, xeeladaha maamulka, iyo dhaqdhaqaaqa suuqa caalamiga ah.
+                    Barnaamijkeena Maamulka Ganacsiga wuxuu kuu diyaarinayaa doorarka hoggaaminta warshadaha kala duwan. Waxaad heli doontaa faham buuxa oo ku saabsan mabaadi&apos;da ganacsiga, xeeladaha maamulka, iyo dhaqdhaqaaqa suuqa caalamiga ah.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +72,11 @@ export default function BusinessAdministration() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Business Administration Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -143,7 +146,7 @@ export default function BusinessAdministration() {
               </span>
             </h2>
             <p className="mb-8 max-w-2xl mx-auto">
-              Join our Business Administration program and develop the skills to become a successful business leader in today's competitive market.
+              Join our Business Administration program and develop the skills to become a successful business leader in today&apos;s competitive market.
               <span className="block text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Maamulka Ganacsiga oo horumarso xirfadaha aad ku noqon karto hoggaamiye ganacsi oo guuleysta suuqa tartanka badan ee maanta.
               </span>

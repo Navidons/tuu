@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState } from 'react'
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react"
+import Image from 'next/image'
 
 const programs = [
   {
@@ -94,11 +95,13 @@ export function Header() {
         </div>
 
         {/* Centered Logo */}
-        <img
+        <Image
           src="/logo.jpeg"
           alt="The Unity University Logo"
           className="absolute h-20 w-20 transition-transform duration-300 hover:scale-110"
           style={{ transform: "translateY(-10%) translateX(-25%)" }}
+          width={80}
+          height={80}
         />
 
         {/* Right-side rows */}

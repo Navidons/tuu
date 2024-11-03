@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Calculator, TrendingUp, ShieldCheck } from "lucide-react"
+import Image from 'next/image'
 
 export default function AccountingAndFinance() {
   return (
@@ -17,10 +18,12 @@ export default function AccountingAndFinance() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Accounting and Finance"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,9 +54,9 @@ export default function AccountingAndFinance() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Accounting & Finance program provides a solid foundation in financial reporting, analysis, and management. You'll develop the skills to navigate complex financial landscapes and make informed business decisions.
+                  Our Accounting & Finance program provides a solid foundation in financial reporting, analysis, and management. You&apos;ll develop the skills to navigate complex financial landscapes and make informed business decisions.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Xisaabaadka & Maaliyadda wuxuu bixiyaa aasaas adag oo ku saabsan warbixinta maaliyadeed, falanqaynta, iyo maamulka. Waxaad horumarinaysaa xirfadaha aad kula socon karto muuqaallada maaliyadeed ee kakan oo aad ku gaari karto go'aannada ganacsi ee la ogaadey.
+                    Barnaamijkeena Xisaabaadka & Maaliyadda wuxuu bixiyaa aasaas adag oo ku saabsan warbixinta maaliyadeed, falanqaynta, iyo maamulka. Waxaad horumarinaysaa xirfadaha aad kula socon karto muuqaallada maaliyadeed ee kakan oo aad ku gaari karto go&apos;aannada ganacsi ee la ogaadey.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +73,12 @@ export default function AccountingAndFinance() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Accounting and Finance Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0"
                 />
               </div>
             </div>
@@ -143,7 +148,7 @@ export default function AccountingAndFinance() {
               </span>
             </h2>
             <p className="mb-8 max-w-2xl mx-auto">
-              Join our Accounting & Finance program and gain the skills to become a financial leader in today's dynamic business world.
+              Join our Accounting & Finance program and gain the skills to become a financial leader in today&apos;s dynamic business world.
               <span className="block text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Xisaabaadka & Maaliyadda oo hel xirfadaha aad ku noqon karto hoggaamiye maaliyadeed adduunka ganacsiga ee isbeddelka badan ee maanta.
               </span>

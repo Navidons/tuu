@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import Link from "next/link"
+import Image from 'next/image'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,8 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative" style={{ backgroundImage: "url('/university-banner.jpg')" }}>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative">
+          <Image src="/university-banner.jpg" alt="University Banner" layout="fill" objectFit="cover" className="absolute inset-0" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -48,8 +50,8 @@ export default function ContactPage() {
                   <span className="block text-lg text-red-300 hover:underline transition-all duration-300">Nala Soo Xiriir</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl animate-fade-in-up">
-                  We're here to help. Get in touch with us for any inquiries or information.
-                  <span className="block text-sm text-red-200 hover:underline transition-all duration-300">Waxaan halkan u joognaa inaan ku caawino. Nala soo xiriir wixii su'aalo ah ama macluumaad.</span>
+                  We&apos;re here to help. Get in touch with us for any inquiries or information.
+                  <span className="block text-sm text-red-200 hover:underline transition-all duration-300">Waxaan halkan u joognaa inaan ku caawino. Nala soo xiriir wixii su&apos;aalo ah ama macluumaad.</span>
                 </p>
               </div>
             </div>
@@ -64,8 +66,8 @@ export default function ContactPage() {
                   <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Nala Soo Xiriir</span>
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We value your feedback and inquiries. Please fill out the form, and we'll get back to you as soon as possible.
-                  <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waxaan qiimeynaa ra'yigaaga iyo su'aalahaaga. Fadlan buuxi foomka, waxaanan kugula soo noqon doonaa sida ugu dhakhsaha badan.</span>
+                  We value your feedback and inquiries. Please fill out the form, and we&apos;ll get back to you as soon as possible.
+                  <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waxaan qiimeynaa ra&apos;yigaaga iyo su&apos;aalahaaga. Fadlan buuxi foomka, waxaanan kugula soo noqon doonaa sida ugu dhakhsaha badan.</span>
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
@@ -215,7 +217,7 @@ export default function ContactPage() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 animate-fade-in-down">
               Frequently Asked Questions
-              <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Su'aalaha Inta Badan La Isweydiiyo</span>
+              <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Su&apos;aalaha Inta Badan La Isweydiiyo</span>
             </h2>
             <div className="grid gap-6 lg:grid-cols-2">
               <Card className="animate-fade-in-left">

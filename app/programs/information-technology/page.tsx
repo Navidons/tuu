@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Server, Shield, Globe } from "lucide-react"
+import Image from 'next/image'
 
 export default function InformationTechnology() {
   return (
@@ -17,10 +18,11 @@ export default function InformationTechnology() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Information Technology"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function InformationTechnology() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Information Technology program equips you with the skills to design, implement, and manage complex IT systems. You'll learn about network administration, cybersecurity, cloud computing, and IT project management, preparing you for a versatile career in the ever-evolving tech industry.
+                  Our Information Technology program equips you with the skills to design, implement, and manage complex IT systems. You&apos;ll learn about network administration, cybersecurity, cloud computing, and IT project management, preparing you for a versatile career in the ever-evolving tech industry.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Teknoolojiyada Macluumaadka wuxuu ku siinayaa xirfadaha aad ku naqshadeyn karto, ku hirgelin karto, oo ku maamuli karto nidaamyada IT-ga ee kakan. Waxaad baran doontaa maamulka shabakadda, amniga cyber-ka, cloud computing, iyo maaraynta mashruucyada IT, taas oo kuu diyaarinaysa xirfad kala duwan oo ku jirta warshadda teknoolojiyada ee had iyo jeer isbedelaysa.
                   </span>
@@ -70,10 +72,11 @@ export default function InformationTechnology() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Information Technology Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>

@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Apple, FlaskConical, Utensils } from "lucide-react"
+import Image from 'next/image'
 
 export default function NutritionAndFoodScience() {
   return (
@@ -17,10 +18,11 @@ export default function NutritionAndFoodScience() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Nutrition and Food Science"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function NutritionAndFoodScience() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Nutrition & Food Science program combines the study of nutrition with food technology and safety. You'll gain a deep understanding of how food affects human health, learn about food production processes, and develop skills in creating nutritious and safe food products.
+                  Our Nutrition & Food Science program combines the study of nutrition with food technology and safety. You&apos;ll gain a deep understanding of how food affects human health, learn about food production processes, and develop skills in creating nutritious and safe food products.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Nafaqada & Sayniska Cuntada wuxuu isku daraa barashada nafaqada iyo teknolojiyada cuntada iyo badbaadada. Waxaad heli doontaa faham qoto dheer oo ku saabsan sida cuntadu u saameynayso caafimaadka aadanaha, waxaad baran doontaa habka wax soo saarka cuntada, oo aad horumarinaysaa xirfadaha aad ku abuurayso alaabooyin cunto oo nafaqo leh oo ammaan ah.
                   </span>
@@ -70,10 +72,11 @@ export default function NutritionAndFoodScience() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Nutrition and Food Science Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -101,7 +104,6 @@ export default function NutritionAndFoodScience() {
                   icon: <FlaskConical className="h-10 w-10 text-red-600" />,
                   title: "Food Science Innovation",
                   soTitle: "Hal-abuurka Sayniska Cuntada",
-                  
                   description: "Learn cutting-edge techniques in food product development.",
                   soDescription: "Baro farsamooyinka ugu dambeeyay ee horumarinta alaabta cuntada.",
                 },

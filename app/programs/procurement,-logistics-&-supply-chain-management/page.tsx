@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Truck, BarChart2, Globe } from "lucide-react"
+import Image from 'next/image'
 
 export default function ProcurementLogisticsSupplyChainManagement() {
   return (
@@ -17,10 +18,11 @@ export default function ProcurementLogisticsSupplyChainManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Procurement, Logistics & Supply Chain Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -70,10 +72,11 @@ export default function ProcurementLogisticsSupplyChainManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Procurement, Logistics & Supply Chain Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -100,7 +103,7 @@ export default function ProcurementLogisticsSupplyChainManagement() {
                 {
                   icon: <BarChart2 className="h-10 w-10 text-red-600" />,
                   title: "Data-Driven Decision Making",
-                  soTitle: "Go'aan qaadashada Ku saleysan Xogta",
+                  soTitle: "Go&apos;aan qaadashada Ku saleysan Xogta",
                   description: "Learn to analyze data for optimizing supply chain operations.",
                   soDescription: "Baro sida loo falanqeeyo xogta si loo hagaajiyo hawlgallada silsiladda sahayda.",
                 },

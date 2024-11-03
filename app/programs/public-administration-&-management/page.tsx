@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Building2, Scale, TrendingUp } from "lucide-react"
+import Image from 'next/image'
 
 export default function PublicAdministrationAndManagement() {
   return (
@@ -17,18 +18,19 @@ export default function PublicAdministrationAndManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Public Administration and Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Public Administration & Management
+              Public Administration &amp; Management
               <span className="block text-xl text-red-200 mt-2">
-                Maamulka Dadweynaha & Maaraynta
+                Maamulka Dadweynaha &amp; Maaraynta
               </span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
@@ -51,9 +53,9 @@ export default function PublicAdministrationAndManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Public Administration & Management program prepares you for leadership roles in government, non-profit organizations, and public sector institutions. You'll gain a deep understanding of public policy, governance structures, and management principles to drive positive change in society.
+                  Our Public Administration &amp; Management program prepares you for leadership roles in government, non-profit organizations, and public sector institutions. You&apos;ll gain a deep understanding of public policy, governance structures, and management principles to drive positive change in society.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Maamulka Dadweynaha & Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee dawladda, hay'adaha aan faa'iido doonka ahayn, iyo hay'adaha qaybta dadweynaha. Waxaad heli doontaa faham qoto dheer oo ku saabsan siyaasadda dadweynaha, qaab-dhismeedyada maamulka, iyo mabaadi'da maaraynta si loo hoggaamiyo isbedel wanaagsan oo bulshada ah.
+                    Barnaamijkeena Maamulka Dadweynaha &amp; Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee dawladda, hay&apos;adaha aan faa&apos;iido doonka ahayn, iyo hay&apos;adaha qaybta dadweynaha. Waxaad heli doontaa faham qoto dheer oo ku saabsan siyaasadda dadweynaha, qaab-dhismeedyada maamulka, iyo mabaadi&apos;da maaraynta si loo hoggaamiyo isbedel wanaagsan oo bulshada ah.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +72,11 @@ export default function PublicAdministrationAndManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Public Administration and Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -143,9 +146,9 @@ export default function PublicAdministrationAndManagement() {
               </span>
             </h2>
             <p className="mb-8 max-w-2xl mx-auto">
-              Join our Public Administration & Management program and become a catalyst for positive change in government and society.
+              Join our Public Administration &amp; Management program and become a catalyst for positive change in government and society.
               <span className="block text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Maamulka Dadweynaha & Maaraynta oo noqo horseed isbedel wanaagsan oo dawladda iyo bulshada ah.
+                Ku soo biir barnaamijkeena Maamulka Dadweynaha &amp; Maaraynta oo noqo horseed isbedel wanaagsan oo dawladda iyo bulshada ah.
               </span>
             </p>
             <div className="flex gap-4 justify-center">

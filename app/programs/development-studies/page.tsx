@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Leaf, BarChart, Users } from "lucide-react"
+import Image from 'next/image'
 
 export default function DevelopmentStudies() {
   return (
@@ -17,10 +18,11 @@ export default function DevelopmentStudies() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Development Studies"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,7 +53,7 @@ export default function DevelopmentStudies() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Development Studies program equips you with the knowledge and skills to address complex social, economic, and environmental challenges. You'll learn to design, implement, and evaluate development projects that drive sustainable growth and improve lives.
+                  Our Development Studies program equips you with the knowledge and skills to address complex social, economic, and environmental challenges. You&apos;ll learn to design, implement, and evaluate development projects that drive sustainable growth and improve lives.
                   <span className="block text-sm text-red-600 mt-2">
                     Barnaamijkeena Daraasaadka Horumarinta wuxuu ku siinayaa aqoonta iyo xirfadaha aad kula tacaali karto caqabadaha adag ee bulshada, dhaqaalaha, iyo deegaanka. Waxaad baran doontaa sida loo naqshadeynayo, loo hirgelinayo, oo loo qiimeeyo mashruucyada horumarinta ee hoggaamiya koboca joogtada ah oo hagaajiya nolosha.
                   </span>
@@ -70,10 +72,11 @@ export default function DevelopmentStudies() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Development Studies Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -100,7 +103,7 @@ export default function DevelopmentStudies() {
                 {
                   icon: <BarChart className="h-10 w-10 text-red-600" />,
                   title: "Data-Driven Decision Making",
-                  soTitle: "Go'aan qaadashada Ku saleysan Xogta",
+                  soTitle: "Go&apos;aan qaadashada Ku saleysan Xogta",
                   description: "Develop skills in research and analysis for effective policy-making.",
                   soDescription: "Horumarso xirfadaha cilmi-baarista iyo falanqaynta si loo sameeyo siyaasad wax ku ool ah.",
                 },

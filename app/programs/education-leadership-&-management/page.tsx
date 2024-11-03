@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Users, Lightbulb, Target } from "lucide-react"
+import Image from 'next/image'
 
 
 export default function EducationLeadershipAndManagement() {
@@ -18,10 +19,12 @@ export default function EducationLeadershipAndManagement() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Education Leadership & Management"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -35,7 +38,7 @@ export default function EducationLeadershipAndManagement() {
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Lead and innovate in educational institutions and systems
               <span className="block text-red-200">
-                Hoggaami oo hal-abuur ku samee hay'adaha iyo nidaamyada waxbarashada
+                Hoggaami oo hal-abuur ku samee hay&apos;adaha iyo nidaamyada waxbarashada
               </span>
             </p>
           </div>
@@ -52,9 +55,9 @@ export default function EducationLeadershipAndManagement() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Education Leadership & Management program prepares you for leadership roles in educational institutions and organizations. You'll develop skills in strategic planning, organizational management, and educational innovation to effectively lead and transform educational environments.
+                  Our Education Leadership & Management program prepares you for leadership roles in educational institutions and organizations. You&apos;ll develop skills in strategic planning, organizational management, and educational innovation to effectively lead and transform educational environments.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Hoggaaminta Waxbarashada & Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee hay'adaha iyo ururada waxbarashada. Waxaad horumarinaysaa xirfadaha qorsheynta istaraatiijiga ah, maamulka ururka, iyo hal-abuurka waxbarashada si aad si wax ku ool ah u hoggaamiso oo aad u beddesho deegaannada waxbarashada.
+                    Barnaamijkeena Hoggaaminta Waxbarashada & Maaraynta wuxuu kuu diyaarinayaa doorarka hoggaaminta ee hay&apos;adaha iyo ururada waxbarashada. Waxaad horumarinaysaa xirfadaha qorsheynta istaraatiijiga ah, maamulka ururka, iyo hal-abuurka waxbarashada si aad si wax ku ool ah u hoggaamiso oo aad u beddesho deegaannada waxbarashada.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -71,10 +74,12 @@ export default function EducationLeadershipAndManagement() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Education Leadership & Management Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 w-full h-full"
                 />
               </div>
             </div>
@@ -146,7 +151,7 @@ export default function EducationLeadershipAndManagement() {
             <p className="mb-8 max-w-2xl mx-auto">
               Join our Education Leadership & Management program and become a transformative leader in educational institutions and systems.
               <span className="block text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Hoggaaminta Waxbarashada & Maaraynta oo noqo hoggaamiye isbedel ku sameeya hay'adaha iyo nidaamyada waxbarashada.
+                Ku soo biir barnaamijkeena Hoggaaminta Waxbarashada & Maaraynta oo noqo hoggaamiye isbedel ku sameeya hay&apos;adaha iyo nidaamyada waxbarashada.
               </span>
             </p>
             <div className="flex gap-4 justify-center">

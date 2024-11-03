@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, Heart, Users, Briefcase } from "lucide-react"
+import Image from 'next/image'
 
 export default function SocialWorkAndSocialAdministration() {
   return (
@@ -17,10 +18,11 @@ export default function SocialWorkAndSocialAdministration() {
       <main className="flex-1">
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Social Work and Social Administration"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -51,9 +53,9 @@ export default function SocialWorkAndSocialAdministration() {
                   </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Social Work & Social Administration program prepares you to make a meaningful impact in people's lives. You'll develop the skills to address social issues, advocate for vulnerable populations, and manage social service organizations effectively.
+                  Our Social Work & Social Administration program prepares you to make a meaningful impact in people&apos;s lives. You&apos;ll develop the skills to address social issues, advocate for vulnerable populations, and manage social service organizations effectively.
                   <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Shaqada Bulshada & Maamulka Bulshada wuxuu kuu diyaarinayaa inaad sameysid saamayn macno leh oo nolosha dadka ah. Waxaad horumarinaysaa xirfadaha aad kula tacaali karto arrimaha bulshada, u doodi karto dadka nugul, oo si wax ku ool ah u maamuli karto hay'adaha adeegga bulshada.
+                    Barnaamijkeena Shaqada Bulshada & Maamulka Bulshada wuxuu kuu diyaarinayaa inaad sameysid saamayn macno leh oo nolosha dadka ah. Waxaad horumarinaysaa xirfadaha aad kula tacaali karto arrimaha bulshada, u doodi karto dadka nugul, oo si wax ku ool ah u maamuli karto hay&apos;adaha adeegga bulshada.
                   </span>
                 </p>
                 <ul className="space-y-2 mb-6">
@@ -70,10 +72,11 @@ export default function SocialWorkAndSocialAdministration() {
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Social Work and Social Administration Students"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -109,7 +112,7 @@ export default function SocialWorkAndSocialAdministration() {
                   title: "Leadership Skills",
                   soTitle: "Xirfadaha Hoggaaminta",
                   description: "Prepare for management roles in social service organizations.",
-                  soDescription: "U diyaargarow doorarka maamulka ee hay'adaha adeegga bulshada.",
+                  soDescription: "U diyaargarow doorarka maamulka ee hay&apos;adaha adeegga bulshada.",
                 },
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -143,7 +146,7 @@ export default function SocialWorkAndSocialAdministration() {
               </span>
             </h2>
             <p className="mb-8 max-w-2xl mx-auto">
-              Join our Social Work & Social Administration program and become a catalyst for positive change in communities and individuals' lives.
+              Join our Social Work & Social Administration program and become a catalyst for positive change in communities and individuals&apos; lives.
               <span className="block text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Shaqada Bulshada & Maamulka Bulshada oo noqo horseed isbedel wanaagsan oo bulshada iyo nolosha shakhsiyaadka ah.
               </span>
