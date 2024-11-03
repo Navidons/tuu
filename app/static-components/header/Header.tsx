@@ -151,11 +151,11 @@ export function Header() {
           src="/logo.jpeg"
           alt="The Unity University Logo"
           className="absolute h-20 w-20 transition-transform duration-300 hover:scale-110"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
 
-        <div className="absolute right-0 flex flex-col justify-center items-start w-1/2 h-full pl-4">
+        <div className="absolute right-1 flex flex-col justify-center items-start w-1/2 h-full pl-12">
           <div className="h-[2px] w-3/4 bg-red-600"></div>
           <div className="h-[2px] w-3/4 bg-red-500 mt-1"></div>
           <div className="h-[2px] w-3/4 bg-green-600 mt-1"></div>
