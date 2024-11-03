@@ -2,6 +2,7 @@ import Link from "next/link"
 import { useState, useEffect, useRef } from 'react'
 import { ChevronDown, ChevronRight, Menu, X, Mail, Phone, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 import Image from 'next/image'
+import Script from 'next/script'
 
 const programs = [
   {
@@ -117,6 +118,14 @@ export function Header() {
 
   return (
     <>
+      <Script id="neexa-chat-widget" strategy="afterInteractive">
+        {`var neexa_xgmx_cc_wpq_ms = "9d66d905-7180-4db4-bff8-f2b7b2a306c0";`}
+      </Script>
+      <Script 
+        src="https://chat-widget.neexa.ai/main.js?nonce=1730651361300.7075"
+        strategy="afterInteractive"
+      />
+      
       <div className="hidden lg:block bg-gray-100 py-2 px-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-6">
