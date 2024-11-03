@@ -1,27 +1,13 @@
 "use client";
 import { Header } from "./static-components/header/Header"
 import { Footer } from "./static-components/footer/Footer"
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  BookOpen,
-  GraduationCap,
-  Users,
-  Mail,
-  Phone,
-  MapPin,
-  ChevronDown,
-  ChevronRight,
-  Menu,
-  X,
-} from "lucide-react";
-import Link from "next/link";
+
 import { ApplyNowButton } from "./buttons/apply-now-button";
 import { LearnMoreButton } from "./buttons/learn-more-button";
 import { OurHistoryButton } from "./buttons/our-history-button";

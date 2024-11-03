@@ -116,7 +116,7 @@ export function LearnMoreButton() {
                 </ol>
                 <p>
                   Our admissions team is here to guide you through every step of the process. 
-                  Don't hesitate to reach out if you have any questions!
+                  Don&apos;t hesitate to reach out if you have any questions!
                 </p>
                 <div className="flex items-center space-x-2">
                   <Book className="h-5 w-5 text-green-600" />

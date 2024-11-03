@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { ChevronRight, BookOpen, GraduationCap, Users } from "lucide-react"
-import Link from "next/link"
+
 
 export default function BankingAndFinance() {
   return (

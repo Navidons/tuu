@@ -3,8 +3,7 @@ import { Header } from "../static-components/header/Header"
 import { Footer } from "../static-components/footer/Footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap, Book, Users, Building, Globe, Award, Mail, Phone, MapPin } from "lucide-react"
-import Link from "next/link"
+import { Book, Users, Building, Globe, Award } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -37,9 +36,9 @@ export default function AboutPage() {
                   <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Taariikhdeena</span>
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Founded in 2021, The Unity University has grown from a small institution to one of Somaliland's leading
+                  Founded in 2021, The Unity University has grown from a small institution to one of Somaliland&apos;s leading
                   centers of higher education. Our journey reflects the resilience and aspirations of our nation,
-                  as we've continuously evolved to meet the changing needs of our students and society.
+                  as we&apos;ve continuously evolved to meet the changing needs of our students and society.
                   <span className="block text-sm text-red-500 hover:underline transition-all duration-300">
                     La aasaasay 2021, Jaamacadda Midnimada waxay ka soo kortay hay'ad yar ilaa mid ka mid ah xarumaha
                     ugu horreeya ee waxbarashada sare ee Somaliland. Safarkeenu wuxuu muujinayaa adkaysiga iyo himilooyinka
@@ -248,8 +247,8 @@ export default function AboutPage() {
                   <span className="block text-lg text-red-200 hover:underline transition-all duration-300">Ku soo biir Bulshadeena</span>
                 </h2>
                 <p className="mx-auto max-w-[600px] text-red-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed animate-fade-in-up">
-                  Whether you're a prospective student, a potential partner, or simply interested in learning more
-                  about The Unity University, we'd love to hear from you. Take the next step in your journey with us.
+                  Whether you&apos;re a prospective student, a potential partner, or simply interested in learning more
+                  about The Unity University, we&apos;d love to hear from you. Take the next step in your journey with us.
                   <span className="block text-sm text-red-200 hover:underline transition-all duration-300">
                     Haddii aad tahay arday mustaqbalka, lammaane suurtagal ah, ama aad xiisaynayso inaad wax badan ka ogaato
                     Jaamacadda Midnimada, waan jeclaan lahayn inaan wax kaa maqalno. Qaado tallaabada xigta ee safarkaaga nala socda.

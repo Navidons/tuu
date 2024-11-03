@@ -13,17 +13,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  BookOpen,
-  GraduationCap,
   Search,
   FileText,
   Download,
-  Globe,
-  Mail,
-  Phone,
-  MapPin,
 } from "lucide-react";
-import Link from "next/link";
 
 const publications = [
   {

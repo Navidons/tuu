@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Calendar, GraduationCap, Search, Globe, Mail, Phone, MapPin } from "lucide-react"
-import Link from "next/link"
+import { Calendar, Search, Globe,} from "lucide-react"
 import { ReadMoreNewsEventButton } from "../buttons/read-more-news-event-button"
 
 const newsAndEvents = [

@@ -57,7 +57,7 @@ export function ContactAdmissionsButton() {
         <DialogHeader>
           <DialogTitle>Contact Admissions</DialogTitle>
           <DialogDescription>
-            Have questions? We're here to help. Fill out this form and our admissions team will get back to you.
+            Have questions? We&apos;re here to help. Fill out this form and our admissions team will get back to you.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
