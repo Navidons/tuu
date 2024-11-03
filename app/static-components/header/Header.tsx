@@ -95,7 +95,7 @@ export function Header() {
 
         {/* Centered Logo */}
         <img
-          src="/logo.jpg"
+          src="/logo.jpeg"
           alt="The Unity University Logo"
           className="absolute h-20 w-20 transition-transform duration-300 hover:scale-110"
           style={{ transform: "translateY(-10%) translateX(-25%)" }}
