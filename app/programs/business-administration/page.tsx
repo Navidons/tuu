@@ -60,14 +60,14 @@ export default function BusinessAdministration() {
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Management Principles", "Marketing Strategies", "Financial Analysis", "Organizational Behavior", "Business Ethics"].map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
+                    <li key={index} className="flex items-center text-gray-700 hover:translate-x-2 transition-transform duration-300 hover:text-red-600">
                       <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now
+                  Apply Now |
                   <span className="block text-xs">Codso Hadda</span>
                 </Button>
               </div>
@@ -137,28 +137,28 @@ export default function BusinessAdministration() {
           </div>
         </section>
 
-        <section className="py-12 bg-red-800 text-white">
+        <section className="py-8 md:py-12 bg-red-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Launch Your Business Career
-              <span className="block text-xl text-red-200 mt-1">
+              <span className="block text-lg md:text-xl text-red-200 mt-1">
                 Bilow Xirfaddaada Ganacsiga
               </span>
             </h2>
-            <p className="mb-8 max-w-2xl mx-auto">
+            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Business Administration program and develop the skills to become a successful business leader in today&apos;s competitive market.
-              <span className="block text-sm text-red-200 mt-2">
+              <span className="block text-xs md:text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Maamulka Ganacsiga oo horumarso xirfadaha aad ku noqon karto hoggaamiye ganacsi oo guuleysta suuqa tartanka badan ee maanta.
               </span>
             </p>
-            <div className="flex gap-4 justify-center">
-              <Button className="bg-white text-red-800 hover:bg-red-100">
-                Apply Now
-                <span className="block text-xs">Codso Hadda</span>
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-red-500 text-white hover:from-yellow-500 hover:to-red-600 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
+                Apply Now |
+                <span className="block text-xs mt-1">Codso Hadda</span>
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-red-700">
-                Request Information
-                <span className="block text-xs">Codso Macluumaad</span>
+              <Button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
+                Request Information |
+                <span className="block text-xs mt-1">Codso Macluumaad</span>
               </Button>
             </div>
           </div>

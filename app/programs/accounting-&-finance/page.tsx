@@ -61,14 +61,14 @@ export default function AccountingAndFinance() {
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Financial Accounting", "Managerial Accounting", "Corporate Finance", "Taxation", "Auditing"].map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
+                    <li key={index} className="flex items-center text-gray-700 hover:text-red-600 hover:translate-x-2 transition-all duration-300">
                       <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now
+                  Apply Now |
                   <span className="block text-xs">Codso Hadda</span>
                 </Button>
               </div>
@@ -139,28 +139,28 @@ export default function AccountingAndFinance() {
           </div>
         </section>
 
-        <section className="py-12 bg-red-800 text-white">
+        <section className="py-8 md:py-12 bg-red-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Start Your Journey in Accounting & Finance
-              <span className="block text-xl text-red-200 mt-1">
+              <span className="block text-lg md:text-xl text-red-200 mt-1">
                 Bilow Safarkaaga Xisaabaadka & Maaliyadda
               </span>
             </h2>
-            <p className="mb-8 max-w-2xl mx-auto">
+            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Accounting & Finance program and gain the skills to become a financial leader in today&apos;s dynamic business world.
-              <span className="block text-sm text-red-200 mt-2">
+              <span className="block text-xs md:text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Xisaabaadka & Maaliyadda oo hel xirfadaha aad ku noqon karto hoggaamiye maaliyadeed adduunka ganacsiga ee isbeddelka badan ee maanta.
               </span>
             </p>
-            <div className="flex gap-4 justify-center">
-              <Button className="bg-white text-red-800 hover:bg-red-100">
-                Apply Now
-                <span className="block text-xs">Codso Hadda</span>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Apply Now |
+                <span className="block text-xs text-yellow-100">Codso Hadda</span>
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-red-700">
-                Request Information
-                <span className="block text-xs">Codso Macluumaad</span>
+              <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 text-white hover:from-blue-500 hover:via-indigo-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Request Information |
+                <span className="block text-xs text-blue-100">Codso Macluumaad</span>
               </Button>
             </div>
           </div>

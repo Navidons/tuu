@@ -50,7 +50,7 @@ const programs = [
     faculty: "Education",
     soFaculty: "Waxbarashada",
     programs: [
-      { name: "Education Policy, Planning & Management", soName: "Siyaasadda Waxbarashada, Qorshaynta & Maaraynta" },
+      { name: "Education Policy, Planning & Management", soName: "Siyaasadda Waxbarashada, Qorsheynta & Maaraynta" },
       { name: "Education Leadership & Management", soName: "Hoggaaminta Waxbarashada & Maaraynta" }
     ]
   }
@@ -117,30 +117,8 @@ export function Header() {
 
   return (
     <header className="px-4 lg:px-6 py-4 flex flex-col lg:flex-row items-center relative">
-      <div className="w-full lg:w-auto flex items-center justify-between">
-        <button 
-          className="lg:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? (
-            <X className="h-6 w-6 text-red-700" />
-          ) : (
-            <Menu className="h-6 w-6 text-red-700" />
-          )}
-        </button>
-        
-        <Link href="/" className="flex items-center justify-center">
-          <span className="ml-2 text-lg font-bold text-red-700">
-            The Unity University
-            <span className="block text-xs text-red-500 hover:underline transition-all duration-300">
-              Jaamacadda Midnimada
-            </span>
-          </span>
-        </Link>
-      </div>
-
-      {/* Horizontal Rows with Centered Logo */}
-      <div className="relative flex-1 flex justify-center items-center h-20 my-4 lg:my-0">
+      {/* Logo Section */}
+      <div className="relative flex-1 flex justify-center items-center h-20 w-full mb-8 lg:mb-0 lg:w-auto lg:order-2 mt-8 lg:mt-0">
         <div className="absolute left-0 flex flex-col justify-center items-end w-1/2 h-full pr-4">
           <div className="h-[2px] w-3/4 bg-red-600"></div>
           <div className="h-[2px] w-3/4 bg-red-500 mt-1"></div>
@@ -151,19 +129,57 @@ export function Header() {
           src="/logo.jpeg"
           alt="The Unity University Logo"
           className="absolute h-20 w-20 transition-transform duration-300 hover:scale-110"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
         />
 
-        <div className="absolute right-1 flex flex-col justify-center items-start w-1/2 h-full pl-12">
+        <div className="absolute right-0 flex flex-col justify-center items-start w-1/2 h-full pl-10">
           <div className="h-[2px] w-3/4 bg-red-600"></div>
           <div className="h-[2px] w-3/4 bg-red-500 mt-1"></div>
           <div className="h-[2px] w-3/4 bg-green-600 mt-1"></div>
         </div>
       </div>
 
+      {/* Mobile Menu Bar with Horizontal Line */}
+      <div className="lg:hidden w-full flex flex-col gap-4">
+        <div className="h-[2px] w-full bg-green-600"></div>
+        <div className="flex justify-between items-center">
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6 text-red-700" />
+            ) : (
+              <Menu className="h-6 w-6 text-red-700" />
+            )}
+          </button>
+          
+          <Link href="/" className="flex items-center justify-center">
+            <span className="text-lg font-bold text-red-700">
+              The Unity University
+              <span className="block text-xs text-red-500 hover:underline transition-all duration-300">
+                Jaamacadda Midnimada
+              </span>
+            </span>
+          </Link>
+        </div>
+      </div>
+
+      {/* Desktop Left Section */}
+      <div className="hidden lg:flex items-center lg:order-1">
+        <Link href="/" className="flex items-center justify-center">
+          <span className="text-lg font-bold text-red-700">
+            The Unity University
+            <span className="block text-xs text-red-500 hover:underline transition-all duration-300">
+              Jaamacadda Midnimada
+            </span>
+          </span>
+        </Link>
+      </div>
+
       {/* Navigation Links */}
-      <nav className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-6 pb-4 lg:pb-0`}>
+      <nav className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-6 pb-4 lg:pb-0 lg:order-3`}>
         {[
           { en: "Home", so: "Guriga", href: "/" },
           { en: "Programs", so: "Barnaamijyada", href: "#", dropdown: true },

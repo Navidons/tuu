@@ -219,15 +219,15 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="bg-gradient-to-r from-red-800 to-red-900 text-white py-10">
+        <section className="bg-gradient-to-r from-red-800 to-red-900 text-white py-8 sm:py-10">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
               Start Your Journey Today
-              <span className="block text-xl text-red-200 mt-1">
+              <span className="block text-lg sm:text-xl text-red-200 mt-1">
                 Bilow Safarkaaga Maanta
               </span>
             </h2>
-            <div className="flex gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <ApplyForAdmissionButton />
               <RequestInformationButton />
             </div>

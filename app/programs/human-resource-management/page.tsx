@@ -60,14 +60,14 @@ export default function HumanResourceManagement() {
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Talent Acquisition", "Employee Relations", "Performance Management", "Compensation and Benefits", "Organizational Development"].map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
+                    <li key={index} className="flex items-center text-gray-700 hover:translate-x-2 transition-transform duration-300 ease-in-out">
                       <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now
+                  Apply Now |
                   <span className="block text-xs">Codso Hadda</span>
                 </Button>
               </div>
@@ -137,27 +137,27 @@ export default function HumanResourceManagement() {
           </div>
         </section>
 
-        <section className="py-12 bg-red-800 text-white">
+        <section className="py-8 md:py-12 bg-red-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Shape the Future of Work
-              <span className="block text-xl text-red-200 mt-1">
+              <span className="block text-lg md:text-xl text-red-200 mt-1">
                 Qaabeynta Mustaqbalka Shaqada
               </span>
             </h2>
-            <p className="mb-8 max-w-2xl mx-auto">
+            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Human Resource Management program and become a key player in shaping organizational culture and driving employee success.
-              <span className="block text-sm text-red-200 mt-2">
+              <span className="block text-xs md:text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Maamulka Shaqaalaha oo noqo ciyaaryahan muhiim ah oo qaabeynaya dhaqanka hay&apos;adda iyo hoggaaminta guusha shaqaalaha.
               </span>
             </p>
-            <div className="flex gap-4 justify-center">
-              <Button className="bg-white text-red-800 hover:bg-red-100">
-                Apply Now
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+                Apply Now |
                 <span className="block text-xs">Codso Hadda</span>
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-red-700">
-                Request Information
+              <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white border-red-300 hover:border-red-400 shadow-lg hover:shadow-xl transition-all duration-300">
+                Request Information |
                 <span className="block text-xs">Codso Macluumaad</span>
               </Button>
             </div>

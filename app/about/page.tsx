@@ -239,30 +239,30 @@ export default function AboutPage() {
           </div>
         </section>
         <section className="w-full py-8 md:py-16 lg:py-20 bg-red-600 text-white">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl animate-fade-in-down">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center justify-center space-y-6 text-center">
+              <div className="space-y-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter animate-fade-in-down">
                   Join Our Community
-                  <span className="block text-lg text-red-200 hover:underline transition-all duration-300">Ku soo biir Bulshadeena</span>
+                  <span className="block text-base md:text-lg text-red-200 hover:underline transition-all duration-300">Ku soo biir Bulshadeena</span>
                 </h2>
-                <p className="mx-auto max-w-[600px] text-red-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed animate-fade-in-up">
+                <p className="mx-auto max-w-[600px] text-sm md:text-base lg:text-xl text-red-100 leading-relaxed animate-fade-in-up">
                   Whether you&apos;re a prospective student, a potential partner, or simply interested in learning more
                   about The Unity University, we&apos;d love to hear from you. Take the next step in your journey with us.
-                  <span className="block text-sm text-red-200 hover:underline transition-all duration-300">
+                  <span className="block text-xs md:text-sm text-red-200 mt-2 hover:underline transition-all duration-300">
                     Haddii aad tahay arday mustaqbalka, lammaane suurtagal ah, ama aad xiisaynayso inaad wax badan ka ogaato
                     Jaamacadda Midnimada, waan jeclaan lahayn inaan wax kaa maqalno. Qaado tallaabada xigta ee safarkaaga nala socda.
                   </span>
                 </p>
               </div>
-              <div className="space-x-4 animate-bounce">
-                <Button className="bg-red-600 text-white hover:bg-red-700">
+              <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4 animate-bounce">
+                <Button className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   Apply Now
-                  <span className="block text-xs text-red-400">Hadda Codso</span>
+                  <span className="block text-xs text-yellow-100">Hadda Codso</span>
                 </Button>
-                <Button variant="outline" className="text-red-600 border-red-600 hover:bg-red-700">
+                <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 text-white hover:from-blue-500 hover:via-indigo-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   Contact Us
-                  <span className="block text-xs">Nala soo xiriir</span>
+                  <span className="block text-xs text-blue-100">Nala soo xiriir</span>
                 </Button>
               </div>
             </div>

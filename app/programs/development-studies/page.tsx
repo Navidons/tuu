@@ -60,14 +60,14 @@ export default function DevelopmentStudies() {
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Sustainable Development", "Project Management", "Social Policy", "Environmental Studies", "Economic Development"].map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
+                    <li key={index} className="flex items-center text-gray-700 hover:translate-x-2 transition-transform duration-300">
                       <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now
+                  Apply Now |
                   <span className="block text-xs">Codso Hadda</span>
                 </Button>
               </div>
@@ -137,27 +137,27 @@ export default function DevelopmentStudies() {
           </div>
         </section>
 
-        <section className="py-12 bg-red-800 text-white">
+        <section className="py-8 md:py-12 bg-red-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Be a Catalyst for Change
-              <span className="block text-xl text-red-200 mt-1">
+              <span className="block text-lg md:text-xl text-red-200 mt-1">
                 Noqo Horseed Isbedel
               </span>
             </h2>
-            <p className="mb-8 max-w-2xl mx-auto">
+            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Development Studies program and become a driving force for sustainable development and social progress in communities around the world.
-              <span className="block text-sm text-red-200 mt-2">
+              <span className="block text-xs md:text-sm text-red-200 mt-2">
                 Ku soo biir barnaamijkeena Daraasaadka Horumarinta oo noqo awood hoggaaminaysa horumarinta joogtada ah iyo horumarka bulshada ee bulshooyinka adduunka oo dhan.
               </span>
             </p>
-            <div className="flex gap-4 justify-center">
-              <Button className="bg-white text-red-800 hover:bg-red-100">
-                Apply Now
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <Button className="w-full md:w-auto bg-red-500 text-white hover:bg-red-600 transition-colors">
+                Apply Now |
                 <span className="block text-xs">Codso Hadda</span>
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-red-700">
-                Request Information
+              <Button variant="outline" className="w-full md:w-auto bg-white text-red-800 hover:bg-red-100 border-red-500 transition-colors">
+                Request Information |
                 <span className="block text-xs">Codso Macluumaad</span>
               </Button>
             </div>
