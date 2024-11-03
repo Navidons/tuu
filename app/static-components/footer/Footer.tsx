@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="flex items-center gap-2 hover:text-red-400 transition-colors duration-200">
                 <Mail className="h-4 w-8"/>
                 <span>info@tuu.university</span>
-                <span>theunityuniversity@gmail.com</span>
+                {/* <span>theunityuniversity@gmail.com</span>? */}
               </div>
               <div className="flex items-center gap-2 hover:text-red-400 transition-colors duration-200">
                 <Phone className="h-4 w-8"/>
