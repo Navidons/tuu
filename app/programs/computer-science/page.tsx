@@ -11,6 +11,12 @@ import {
 import { ChevronRight, Code, Database, Globe } from "lucide-react"
 import Image from 'next/image'
 
+// Define the interface for the item
+interface ProgramItem {
+  icon: JSX.Element; // Assuming icon is a JSX element
+  title: string;
+  description: string;
+}
 
 export default function ComputerScience() {
   return (
@@ -77,7 +83,7 @@ export default function ComputerScience() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* Removed Somali language content */].map((item, index) => (
+              {[/* Removed Somali language content */].map((item: ProgramItem, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

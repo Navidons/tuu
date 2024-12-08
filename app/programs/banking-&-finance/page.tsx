@@ -31,15 +31,9 @@ export default function BankingAndFinance() {
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Banking & Finance
-              <span className="block text-xl text-red-200 mt-2">
-                Bangiyada & Maaliyadda
-              </span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Prepare for a dynamic career in the financial sector
-              <span className="block text-red-200">
-                U diyaargarow xirfad firfircoon oo ku aadan waaxda maaliyadda
-              </span>
             </p>
           </div>
         </section>
@@ -50,15 +44,9 @@ export default function BankingAndFinance() {
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-red-800">
                   Program Overview
-                  <span className="block text-lg text-red-600 mt-1">
-                    Guudmar Barnaamijka
-                  </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Our Banking & Finance program equips students with the knowledge and skills needed to excel in the dynamic world of finance. You&apos;ll gain a deep understanding of financial markets, banking operations, investment strategies, and risk management.
-                  <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Bangiyada & Maaliyadda wuxuu ardayda siiyaa aqoonta iyo xirfadaha loo baahan yahay si ay ugu guuleystaan adduunka isbeddelka badan ee maaliyadda. Waxaad heli doontaa faham qoto dheer oo ku saabsan suuqyada maaliyadda, hawlgallada bangiyada, xeeladaha maalgashiga, iyo maaraynta halista.
-                  </span>
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Financial Analysis", "Banking Systems", "Investment Management", "Risk Assessment", "Corporate Finance"].map((item, index) => (
@@ -69,8 +57,7 @@ export default function BankingAndFinance() {
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now |
-                  <span className="block text-xs">Codso Hadda</span>
+                  Apply Now
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
@@ -90,32 +77,23 @@ export default function BankingAndFinance() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center text-red-800">
               Why Choose Our Program?
-              <span className="block text-lg text-red-600 mt-1">
-                Maxaa Loogu Doortay Barnaamijkeena?
-              </span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   icon: <BookOpen className="h-10 w-10 text-red-600" />,
                   title: "Comprehensive Curriculum",
-                  soTitle: "Manhaj Dhammaystiran",
                   description: "Our program covers all aspects of modern banking and finance.",
-                  soDescription: "Barnaamijkeenu wuxuu daboolayaa dhammaan dhinacyada bangiyada iyo maaliyadda casriga ah.",
                 },
                 {
                   icon: <GraduationCap className="h-10 w-10 text-red-600" />,
                   title: "Industry-Experienced Faculty",
-                  soTitle: "Macalimiin Khibrad u leh Warshadaha",
                   description: "Learn from professionals with real-world financial sector experience.",
-                  soDescription: "Ka baro xirfadlayaal leh waayo-aragnimo dhabta ah oo waaxda maaliyadda ah.",
                 },
                 {
                   icon: <Users className="h-10 w-10 text-red-600" />,
                   title: "Networking Opportunities",
-                  soTitle: "Fursado Isku-xirka",
                   description: "Connect with industry leaders and fellow finance enthusiasts.",
-                  soDescription: "La xiriir hogaamiyeyaasha warshadaha iyo kuwa kale ee xiiseeya maaliyadda.",
                 },
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -124,14 +102,12 @@ export default function BankingAndFinance() {
                       {item.icon}
                       <div>
                         {item.title}
-                        <span className="block text-sm text-red-600">{item.soTitle}</span>
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600">
                       {item.description}
-                      <span className="block text-sm text-red-500 mt-1">{item.soDescription}</span>
                     </p>
                   </CardContent>
                 </Card>
@@ -144,24 +120,16 @@ export default function BankingAndFinance() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Start Your Journey?
-              <span className="block text-lg md:text-xl text-red-200 mt-1">
-                Ma Diyaar u Tahay Inaad Bilowdo Safarkaaga?
-              </span>
             </h2>
             <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Banking & Finance program and pave the way for a successful career in the financial sector.
-              <span className="block text-xs md:text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Bangiyada & Maaliyadda oo u gogol xaar mustaqbal guul leh oo waaxda maaliyadda ah.
-              </span>
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-red-500 text-white hover:from-yellow-500 hover:to-red-600 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
-                Apply Now |
-                <span className="block text-xs">Codso Hadda</span>
+                Apply Now
               </Button>
               <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white border-2 border-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-md hover:shadow-lg">
-                Request Information | 
-                <span className="block text-xs">Codso Macluumaad</span>
+                Request Information
               </Button>
             </div>
           </div>

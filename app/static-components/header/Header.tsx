@@ -8,63 +8,63 @@ const programs = [
   {
     faculty: "Business & Management",
     programs: [
-      { name: "Bachelor of Business Administration" },
-      { name: "Bachelor of Accounting and Finance" },
-      { name: "Bachelor of Banking and Finance" },
-      { name: "Bachelor of Procurement, Logistics and Supplies Chain Management" },
-      { name: "Bachelor of Human Resource Management" },
-      { name: "Bachelor of Marketing" },
-      { name: "Master of Business Administration" },
-      { name: "Master of Accounting & Finance" },
-      { name: "Master of Human Resources Management" },
-      { name: "Master of Marketing Management" },
-      { name: "Master of Procurement, Logistics and Supplies Chain Management" }
+      { name: "Bachelor of Business Administration", path: "/programs/business-administration" },
+      { name: "Bachelor of Accounting and Finance", path: "/programs/accounting-&-finance" },
+      { name: "Bachelor of Banking and Finance", path: "/programs/banking-&-finance" },
+      { name: "Bachelor of Procurement, Logistics and Supplies Chain Management", path: "/programs/procurement,-logistics-&-supply-chain-management" },
+      { name: "Bachelor of Human Resource Management", path: "/programs/human-resource-management" },
+      { name: "Bachelor of Marketing", path: "/programs/marketing" },
+      { name: "Master of Business Administration", path: "/programs/business-administration" },
+      { name: "Master of Accounting & Finance", path: "/programs/accounting-&-finance" },
+      { name: "Master of Human Resources Management", path: "/programs/human-resource-management" },
+      { name: "Master of Marketing Management", path: "/programs/marketing" },
+      { name: "Master of Procurement, Logistics and Supplies Chain Management", path: "/programs/procurement,-logistics-&-supply-chain-management" }
     ]
   },
   {
     faculty: "Computing & IT",
     programs: [
-      { name: "Bachelor of Science in Software Engineering" },
-      { name: "Bachelor of Science in Computer Science" },
-      { name: "Bachelor of Science in Information Technology" },
-      { name: "Master of Science in Information Technology" }
+      { name: "Bachelor of Science in Software Engineering", path: "/programs/software-engineering" },
+      { name: "Bachelor of Science in Computer Science", path: "/programs/computer-science" },
+      { name: "Bachelor of Science in Information Technology", path: "/programs/information-technology" },
+      { name: "Master of Science in Information Technology", path: "/programs/information-technology" }
     ]
   },
   {
     faculty: "Social Sciences",
     programs: [
-      { name: "Bachelor of International Relations and Diplomatic Studies" },
-      { name: "Bachelor of Arts in Public Administration and Management" },
-      { name: "Bachelor of Arts in Social Works and Social Administration" },
-      { name: "Bachelor of Project Planning and Management" },
-      { name: "Bachelor of Arts in Public Relations and Media Management" },
-      { name: "Master of Arts in International Relations and Diplomatic Studies" },
-      { name: "Master of Arts in Public Administration and Management" },
-      { name: "Master of Arts in Development Studies" },
-      { name: "Master of Project Planning and Management" }
+      { name: "Bachelor of International Relations and Diplomatic Studies", path: "/programs/international-relations-and-diplomatic-studies" },
+      { name: "Bachelor of Arts in Public Administration and Management", path: "/programs/public-administration-&-management" },
+      { name: "Bachelor of Arts in Social Works and Social Administration", path: "/programs/social-work-&-social-administration" },
+      { name: "Bachelor of Project Planning and Management", path: "/programs/project-planning-&-management" },
+      { name: "Bachelor of Arts in Public Relations and Media Management", path: "/programs/public-relations-&-media-management" },
+      { name: "Master of Arts in International Relations and Diplomatic Studies", path: "/programs/international-relations-and-diplomatic-studies" },
+      { name: "Master of Arts in Public Administration and Management", path: "/programs/public-administration-&-management" },
+      { name: "Master of Arts in Development Studies", path: "/programs/development-studies" },
+      { name: "Master of Project Planning and Management", path: "/programs/project-planning-&-management" }
     ]
   },
   {
     faculty: "Health Sciences",
     programs: [
-      { name: "Bachelor of Public Health" },
-      { name: "Bachelor of Nutrition and Food Science" },
-      { name: "Bachelor of Science in Health Service & Management" },
-      { name: "Master of Public Health" },
-      { name: "Master of Nutrition and Food Science" }
+      { name: "Bachelor of Public Health", path: "/programs/public-health" },
+      { name: "Bachelor of Nutrition and Food Science", path: "/programs/nutrition-&-food-science" },
+      { name: "Bachelor of Science in Health Service & Management", path: "/programs/health-service-&-management" },
+      { name: "Master of Public Health", path: "/programs/public-health" },
+      { name: "Master of Nutrition and Food Science", path: "/programs/nutrition-&-food-science" }
     ]
   },
   {
     faculty: "Education",
     programs: [
-      { name: "Master of Education in Policy, Planning & Management" },
-      { name: "Master of Education in Leadership and Management" }
+      { name: "Master of Education in Policy, Planning & Management", path: "/programs/education-policy,-planning-&-management" },
+      { name: "Master of Education in Leadership and Management", path: "/programs/education-leadership-&-management" }
     ]
   },
   {
     faculty: "Foundation",
     programs: [
-      { name: "Foundation Program for Starters" }
+      { name: "Foundation Program for Starters", path: "/programs/foundation" }
     ]
   }
 ]
@@ -288,7 +288,7 @@ export function Header() {
                                 {faculty.programs.map((program) => (
                                   <Link
                                     key={program.name}
-                                    href={`/programs/${program.name.toLowerCase().replace(/ /g, '-')}`}
+                                    href={program.path}
                                     className="block px-4 py-2 hover:bg-red-50"
                                     onClick={() => {
                                       setIsMenuOpen(false)
