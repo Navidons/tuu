@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "THE UNITY UNIVERSITY - HERGEISA, SOMALILAND",
+  title: "THE UNITY UNIVERSITY",
   description: "Designed by SK Designs.",
 };
 

@@ -19,81 +19,66 @@ import Image from 'next/image';
 const programs = [
   {
     faculty: "Business & Management",
-    soFaculty: "Ganacsiga & Maamulka",
     programs: [
-      { name: "Business Administration", soName: "Maamulka Ganacsiga" },
-      { name: "Accounting & Finance", soName: "Xisaabaadka & Maaliyadda" },
-      { name: "Banking & Finance", soName: "Bangiyada & Maaliyadda" },
+      { name: "Business Administration" },
+      { name: "Accounting & Finance" },
+      { name: "Banking & Finance" },
       {
         name: "Procurement, Logistics & Supply Chain Management",
-        soName: "Iibsiga, Gaadiidka & Maaraynta Sahayda",
       },
-      { name: "Human Resource Management", soName: "Maamulka Shaqaalaha" },
-      { name: "Marketing", soName: "Suuq-geynta" },
+      { name: "Human Resource Management" },
+      { name: "Marketing" },
     ],
   },
   {
     faculty: "Computing & IT",
-    soFaculty: "Kombuyuutarka & IT",
     programs: [
-      { name: "Computer Science", soName: "Sayniska Kombuyuutarka" },
-      { name: "Information Technology", soName: "Teknoolojiyada Macluumaadka" },
-      { name: "Software Engineering", soName: "Injineerinka Software-ka" },
+      { name: "Computer Science" },
+      { name: "Information Technology" },
+      { name: "Software Engineering" },
     ],
   },
   {
     faculty: "Social Sciences",
-    soFaculty: "Sayniska Bulshada",
     programs: [
       {
         name: "Public Administration & Management",
-        soName: "Maamulka Dadweynaha & Maaraynta",
       },
       {
         name: "International Relations & Diplomatic Studies",
-        soName: "Xiriirrada Caalamiga & Daraasaadka Diblomaasiyada",
       },
-      { name: "Development Studies", soName: "Daraasaadka Horumarinta" },
+      { name: "Development Studies" },
       {
         name: "Social Work & Social Administration",
-        soName: "Shaqada Bulshada & Maamulka Bulshada",
       },
       {
         name: "Public Relations & Media Management",
-        soName: "Xiriirka Dadweynaha & Maamulka Warbaahinta",
       },
       {
         name: "Project Planning & Management",
-        soName: "Qorshaynta & Maaraynta Mashruucyada",
       },
     ],
   },
   {
     faculty: "Health Sciences",
-    soFaculty: "Sayniska Caafimaadka",
     programs: [
-      { name: "Public Health", soName: "Caafimaadka Dadweynaha" },
+      { name: "Public Health" },
       {
         name: "Nutrition & Food Science",
-        soName: "Nafaqada & Sayniska Cuntada",
       },
       {
         name: "Health Service & Management",
-        soName: "Adeegga Caafimaadka & Maaraynta",
       },
     ],
   },
   {
     faculty: "Education",
-    soFaculty: "Waxbarashada",
     programs: [
       {
         name: "Education Policy, Planning & Management",
-        soName: "Siyaasadda Waxbarashada, Qorshaynta & Maaraynta",
       },
       {
         name: "Education Leadership & Management",
-        soName: "Hoggaaminta Waxbarashada & Maaraynta",
       },
     ],
   },
@@ -119,15 +104,9 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Welcome to The Unity University
-              <span className="block text-xl text-red-200 mt-2">
-                Ku soo dhowow Jaamacadda Midnimada
-              </span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               What Begins Here Transforms Africa
-              <span className="block text-red-200">
-                Waxa Halkan Ka Bilaabma Ayaa Afrika Bedela
-              </span>
             </p>
             <div className="flex gap-4 justify-center">
               <ApplyNowButton />
@@ -140,9 +119,6 @@ export default function LandingPage() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8">
               Our Faculties
-              <span className="block text-lg text-red-700 mt-1">
-                Kulliyadaheena
-              </span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -154,9 +130,6 @@ export default function LandingPage() {
                   <CardHeader className="bg-gradient-to-r from-red-50 to-white">
                     <CardTitle className="text-red-800">
                       {faculty.faculty}
-                      <span className="block text-sm text-red-600 mt-1">
-                        {faculty.soFaculty}
-                      </span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -167,9 +140,6 @@ export default function LandingPage() {
                           className="text-sm hover:text-red-700 transition-colors duration-200"
                         >
                           {program.name}
-                          <span className="block text-xs text-red-600">
-                            {program.soName}
-                          </span>
                         </li>
                       ))}
                     </ul>
@@ -186,20 +156,9 @@ export default function LandingPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-4">
                   About The Unity University
-                  <span className="block text-lg text-red-700 mt-1">
-                    Ku saabsan Jaamacadda Midnimada
-                  </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  The Unity University is committed to providing quality
-                  education and fostering academic excellence in Somaliland. Our
-                  diverse programs and dedicated faculty prepare students for
-                  successful careers and meaningful contributions to society.
-                  <span className="block text-sm text-red-600 mt-2">
-                    Jaamacadda Midnimada waxay u heellan tahay bixinta
-                    waxbarasho tayo leh iyo horumarinta waxbarashada sare ee
-                    Somaliland.
-                  </span>
+                  The Unity University is committed to providing quality education and fostering academic excellence. Our diverse programs and dedicated faculty prepare students for successful careers and meaningful contributions to society.
                 </p>
                 <div className="flex gap-4">
                   <OurHistoryButton />
@@ -223,9 +182,6 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
               Start Your Journey Today
-              <span className="block text-lg sm:text-xl text-red-200 mt-1">
-                Bilow Safarkaaga Maanta
-              </span>
             </h2>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <ApplyForAdmissionButton />

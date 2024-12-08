@@ -21,7 +21,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2 hover:text-red-400 transition-colors duration-200">
                 <MapPin className="h-4 w-8"/>
-                <span>JigJiga Yar Street near Masjid Jabir, Hargeisa, Somaliland</span>
+                <span>123 University Avenue</span>
               </div>
             </div>
           </div>
@@ -55,8 +55,7 @@ export const Footer = () => {
               </Link>
             </div>
             <p className="text-sm text-gray-400">
-              © 2024 The Unity University. All rights reserved.
-              <span className="block mt-1">Dhammaan xuquuqda way dhowran yihiin.</span>
+              &copy; 2024 The Unity University. All rights reserved.
             </p>
           </div>
         </div>

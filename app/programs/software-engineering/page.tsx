@@ -29,15 +29,9 @@ export default function SoftwareEngineering() {
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Software Engineering
-              <span className="block text-xl text-red-200 mt-2">
-                Injineernimada Software-ka
-              </span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Design, develop, and deliver innovative software solutions
-              <span className="block text-red-200">
-                Naqshadeynta, horumarinta, iyo bixinta xalal software oo hal-abuur leh
-              </span>
             </p>
           </div>
         </section>
@@ -48,15 +42,9 @@ export default function SoftwareEngineering() {
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-red-800">
                   Program Overview
-                  <span className="block text-lg text-red-600 mt-1">
-                    Guudmar Barnaamijka
-                  </span>
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Our Software Engineering program prepares you to become a skilled professional in the dynamic field of software development. You&apos;ll learn to design, implement, and maintain complex software systems using industry-standard methodologies and cutting-edge technologies.
-                  <span className="block text-sm text-red-600 mt-2">
-                    Barnaamijkeena Injineernimada Software-ka wuxuu kuu diyaarinayaa inaad noqoto xirfadle aqoon leh oo ku jira goobta horumarinta software-ka ee isbedelka badan. Waxaad baran doontaa sida loo naqshadeynayo, loo hirgelinayo, oo loo ilaalinayo nidaamyada software-ka ee kakan adiga oo isticmaalaya hab-raacyada heerka warshadda iyo teknoolojiyada ugu dambeeyay.
-                  </span>
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Software Design Principles", "Agile Development", "Web and Mobile App Development", "Database Systems", "Software Testing and Quality Assurance"].map((item, index) => (
@@ -67,8 +55,7 @@ export default function SoftwareEngineering() {
                   ))}
                 </ul>
                 <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now |
-                  <span className="block text-xs">Codso Hadda</span>
+                  Apply Now
                 </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
@@ -87,33 +74,24 @@ export default function SoftwareEngineering() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center text-red-800">
               Why Choose Our Program?
-              <span className="block text-lg text-red-600 mt-1">
-                Maxaa Loogu Doortay Barnaamijkeena?
-              </span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Code className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Aligned Curriculum",
-                  soTitle: "Manhaj Ku Habboon Warshadaha",
-                  description: "Learn the latest programming languages and development frameworks.",
-                  soDescription: "Baro luqadaha barnaamij-sameynta iyo qaab-dhismeedyada horumarinta ugu dambeeyay.",
+                  icon: <Code className="w-6 h-6 text-red-800" />,
+                  title: "Software Design",
+                  description: "Learn advanced software design principles and architectural patterns."
                 },
                 {
-                  icon: <Layers className="h-10 w-10 text-red-600" />,
-                  title: "Comprehensive Project Experience",
-                  soTitle: "Khibrad Mashruuc oo Dhammaystiran",
-                  description: "Build a portfolio of real-world software projects.",
-                  soDescription: "Dhis portfolio-yo mashruucyo software oo dhabta ah.",
+                  icon: <Layers className="w-6 h-6 text-red-800" />,
+                  title: "Technology Stack",
+                  description: "Master modern programming languages and development frameworks."
                 },
                 {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Collaborative Learning",
-                  soTitle: "Waxbarasho Wadajir ah",
-                  description: "Work on team projects that simulate real software development environments.",
-                  soDescription: "Ka shaqee mashruucyo kooxeed oo u ekeysiinaaya deegaannada horumarinta software-ka ee dhabta ah.",
-                },
+                  icon: <Users className="w-6 h-6 text-red-800" />,
+                  title: "Collaborative Development",
+                  description: "Develop skills in team-based software engineering practices."
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -121,14 +99,12 @@ export default function SoftwareEngineering() {
                       {item.icon}
                       <div>
                         {item.title}
-                        <span className="block text-sm text-red-600">{item.soTitle}</span>
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600">
                       {item.description}
-                      <span className="block text-sm text-red-500 mt-1">{item.soDescription}</span>
                     </p>
                   </CardContent>
                 </Card>
@@ -141,24 +117,16 @@ export default function SoftwareEngineering() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Build the Future of Software
-              <span className="block text-lg md:text-xl text-red-200 mt-1">
-                Dhis Mustaqbalka Software-ka
-              </span>
             </h2>
             <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Software Engineering program and become a creator of innovative digital solutions that shape our world.
-              <span className="block text-xs md:text-sm text-red-200 mt-2">
-                Ku soo biir barnaamijkeena Injineernimada Software-ka oo noqo abuuraha xalal dhijitaal ah oo hal-abuur leh oo qaabeynaya adduunkeenna.
-              </span>
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now |
-                <span className="block text-xs">Codso Hadda</span>
+                Apply Now
               </Button>
               <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information |
-                <span className="block text-xs">Codso Macluumaad</span>
+                Request Information
               </Button>
             </div>
           </div>

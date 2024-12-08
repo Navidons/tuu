@@ -47,11 +47,9 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none animate-fade-in-down text-white">
                   Contact Us
-                  <span className="block text-lg text-red-300 hover:underline transition-all duration-300">Nala Soo Xiriir</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl animate-fade-in-up">
-                  We&apos;re here to help. Get in touch with us for any inquiries or information.
-                  <span className="block text-sm text-red-200 hover:underline transition-all duration-300">Waxaan halkan u joognaa inaan ku caawino. Nala soo xiriir wixii su&apos;aalo ah ama macluumaad.</span>
+                  We're here to help. Get in touch with us for any inquiries or information.
                 </p>
               </div>
             </div>
@@ -63,22 +61,19 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl animate-fade-in-left">
                   Get in Touch
-                  <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Nala Soo Xiriir</span>
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We value your feedback and inquiries. Please fill out the form, and we&apos;ll get back to you as soon as possible.
-                  <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waxaan qiimeynaa ra&apos;yigaaga iyo su&apos;aalahaaga. Fadlan buuxi foomka, waxaanan kugula soo noqon doonaa sida ugu dhakhsaha badan.</span>
+                  We value your feedback and inquiries. Please fill out the form, and we'll get back to you as soon as possible.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">
                       Name
-                      <span className="block text-xs text-red-500">Magaca</span>
                     </Label>
                     <Input 
                       id="name" 
                       name="name" 
-                      placeholder="Your Name / Magacaaga" 
+                      placeholder="Your Name" 
                       value={formData.name}
                       onChange={handleInputChange}
                       required 
@@ -87,7 +82,6 @@ export default function ContactPage() {
                   <div className="space-y-2">
                     <Label htmlFor="email">
                       Email
-                      <span className="block text-xs text-red-500">Iimaylka</span>
                     </Label>
                     <Input 
                       id="email" 
@@ -102,12 +96,11 @@ export default function ContactPage() {
                   <div className="space-y-2">
                     <Label htmlFor="subject">
                       Subject
-                      <span className="block text-xs text-red-500">Mowduuca</span>
                     </Label>
                     <Input 
                       id="subject" 
                       name="subject" 
-                      placeholder="Subject / Mowduuca" 
+                      placeholder="Subject" 
                       value={formData.subject}
                       onChange={handleInputChange}
                       required 
@@ -116,12 +109,11 @@ export default function ContactPage() {
                   <div className="space-y-2">
                     <Label htmlFor="message">
                       Message
-                      <span className="block text-xs text-red-500">Farriinta</span>
                     </Label>
                     <Textarea 
                       id="message" 
                       name="message" 
-                      placeholder="Your message / Farriintaada" 
+                      placeholder="Your message" 
                       value={formData.message}
                       onChange={handleInputChange}
                       required 
@@ -129,14 +121,12 @@ export default function ContactPage() {
                   </div>
                   <Button type="submit" className="w-full animate-pulse">
                     Send Message
-                    <span className="block text-xs">Dir Farriinta</span>
                   </Button>
                 </form>
               </div>
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl animate-fade-in-right">
                   Contact Information
-                  <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Macluumaadka Xiriirka</span>
                 </h2>
                 <div className="grid gap-4">
                   <Card>
@@ -144,13 +134,11 @@ export default function ContactPage() {
                       <MapPin className="w-8 h-8 text-red-600" />
                       <CardTitle>
                         Address
-                        <span className="block text-sm text-red-500">Cinwaanka</span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p>
-                        123 University Avenue, Hargeisa, Somaliland
-                        <span className="block text-sm text-red-500 hover:underline">123 Jidka Jaamacadda, Hargeysa, Somaliland</span>
+                        123 University Avenue
                       </p>
                     </CardContent>
                   </Card>
@@ -159,13 +147,11 @@ export default function ContactPage() {
                       <Phone className="w-8 h-8 text-red-600" />
                       <CardTitle>
                         Phone
-                        <span className="block text-sm text-red-500">Telefoonka</span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p>
-                        +252 63 4xxxxxx
-                        <span className="block text-sm text-red-500 hover:underline">+252 63 4xxxxxx</span>
+                        +252 63 4049999
                       </p>
                     </CardContent>
                   </Card>
@@ -174,13 +160,11 @@ export default function ContactPage() {
                       <Mail className="w-8 h-8 text-red-600" />
                       <CardTitle>
                         Email
-                        <span className="block text-sm text-red-500">Iimaylka</span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p>
-                        info@unityuniversity.edu.so
-                        <span className="block text-sm text-red-500 hover:underline">info@unityuniversity.edu.so</span>
+                        info@unityuniversity.edu
                       </p>
                     </CardContent>
                   </Card>
@@ -188,7 +172,6 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">
                     Follow Us
-                    <span className="block text-sm text-red-500">Nala Soco</span>
                   </h3>
                   <div className="flex space-x-4">
                     <Link href="#" className="text-gray-500 hover:text-red-600 transition-colors duration-300">
@@ -217,20 +200,17 @@ export default function ContactPage() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 animate-fade-in-down">
               Frequently Asked Questions
-              <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Su&apos;aalaha Inta Badan La Isweydiiyo</span>
             </h2>
             <div className="grid gap-6 lg:grid-cols-2">
               <Card className="animate-fade-in-left">
                 <CardHeader>
                   <CardTitle>
                     How can I apply to The Unity University?
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Sideen u codsan karaa Jaamacadda Midnimada?</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     Visit our Admissions page for detailed information on the application process, requirements, and deadlines.
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Booqo bogga Aqbalida si aad u hesho macluumaad faahfaahsan oo ku saabsan habka codsiga, shuruudaha, iyo waqtiyada kama dambeysta ah.</span>
                   </p>
                 </CardContent>
               </Card>
@@ -238,13 +218,11 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>
                     What scholarships are available?
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waa maxay deeqaha waxbarasho ee la heli karo?</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     We offer various merit-based and need-based scholarships. Check our Financial Aid page for more information.
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waxaan bixinaa deeqo waxbarasho oo kala duwan oo ku salaysan mudnaanta iyo baahida. Fiiri bogga Kaalmada Maaliyadeed si aad u hesho macluumaad dheeraad ah.</span>
                   </p>
                 </CardContent>
               </Card>
@@ -252,13 +230,11 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>
                     Are there accommodation options for students?
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Ma jiraan ikhtiyaarro hoy oo ardayda?</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     Yes, we provide on-campus housing for students. Visit our Student Life page to learn about accommodation options.
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Haa, waxaan bixinaa guri ku yaala xarunta jaamacadda oo loogu talagalay ardayda. Booqo bogga Nolosha Ardayga si aad wax uga ogaato ikhtiyaarrada hoygaarka.</span>
                   </p>
                 </CardContent>
               </Card>
@@ -266,13 +242,11 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>
                     How can I request a campus tour?
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Sideen u codsan karaa booqasho xarunta jaamacadda?</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     You can schedule a campus tour through our Admissions Office. Contact them directly or use the form on this page.
-                    <span className="block text-sm text-red-500 hover:underline transition-all duration-300">Waxaad jadwali kartaa booqasho xarunta jaamacadda iyada oo loo marayo Xafiiska Aqbalida. Si toos ah ula xiriir ama isticmaal foomka ku yaal boggan.</span>
                   </p>
                 </CardContent>
               </Card>
@@ -283,7 +257,6 @@ export default function ContactPage() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 animate-fade-in-down">
               Our Location
-              <span className="block text-lg text-red-600 hover:underline transition-all duration-300">Goobteena</span>
             </h2>
             <div className="aspect-video overflow-hidden rounded-xl animate-fade-in-up">
               <iframe

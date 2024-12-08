@@ -24,56 +24,44 @@ const publications = [
   {
     id: 1,
     title: "Annual Research Report 2023",
-    soTitle: "Warbixinta Cilmi-baarista Sanadlaha ah 2023",
     type: "report",
     file: "annual-report-2023.pdf",
     description: "Comprehensive overview of university research activities",
-    soDescription: "Dulmar buuxa oo ku saabsan hawlaha cilmi-baarista jaamacadda",
   },
   {
     id: 2,
     title: "Student Handbook",
-    soTitle: "Buug-gacmeedka Ardayga",
     type: "handbook",
     file: "student-handbook.pdf",
     description: "Essential guide for all Unity University students",
-    soDescription: "Hagaha muhiimka ah ee dhammaan ardayda Jaamacadda Midnimada",
   },
   {
     id: 3,
-    title: "Faculty Research: Climate Change in Somaliland",
-    soTitle: "Cilmi-baarista Kulliyadda: Isbeddelka Cimilada ee Somaliland",
+    title: "Faculty Research: Climate Change Impact",
     type: "research",
     file: "climate-change-research.pdf",
     description: "Latest findings on climate patterns and environmental impact",
-    soDescription: "Natiijooyinka ugu dambeeyay ee qaababka cimilada iyo saamaynta deegaanka",
   },
   {
     id: 4,
     title: "Admission Guidelines 2024",
-    soTitle: "Hagaha Ogolaanshaha 2024",
     type: "guidelines",
     file: "admission-guidelines-2024.pdf",
     description: "Complete admission requirements and procedures",
-    soDescription: "Shuruudaha iyo nidaamyada ogolaanshaha oo dhammeystiran",
   },
   {
     id: 5,
     title: "Unity University Journal Vol. 5",
-    soTitle: "Joornaalka Jaamacadda Midnimada Vol. 5",
     type: "journal",
     file: "unity-journal-vol5.pdf",
     description: "Academic journal featuring faculty and student research",
-    soDescription: "Joornaalka tacliinta ee ku saabsan cilmi-baarista macallimiinta iyo ardayda",
   },
   {
     id: 6,
     title: "Campus Map",
-    soTitle: "Khariidadda Xarunta",
     type: "map",
     file: "campus-map.pdf",
     description: "Interactive map of university facilities",
-    soDescription: "Khariidadda is-dhexgalka leh ee xarumaha jaamacadda",
   },
 ];
 
@@ -85,9 +73,7 @@ export default function DownloadsAndPublicationsPage() {
   const filteredPublications = publications.filter(
     (pub) => {
       const matchesSearch = pub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pub.soTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pub.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pub.soDescription.toLowerCase().includes(searchTerm.toLowerCase());
+        pub.description.toLowerCase().includes(searchTerm.toLowerCase());
       
       return selectedCategory === "all" ? matchesSearch : matchesSearch && pub.type === selectedCategory;
     }
@@ -112,15 +98,9 @@ export default function DownloadsAndPublicationsPage() {
               <div className="space-y-2">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter animate-fade-in-down text-white">
                   Downloads and Publications
-                  <span className="block text-base sm:text-lg text-red-300 hover:underline transition-all duration-300">
-                    Soo dejinta iyo Daabacaadyada
-                  </span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-sm sm:text-base md:text-lg text-gray-200 animate-fade-in-up">
                   Access our latest research, reports, and resources
-                  <span className="block text-xs sm:text-sm text-red-200 hover:underline transition-all duration-300">
-                    Hel cilmi-baarisyadayada, warbixinaha, iyo ilaha ugu dambeeyay
-                  </span>
                 </p>
               </div>
             </div>
@@ -133,9 +113,6 @@ export default function DownloadsAndPublicationsPage() {
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <h2 className="text-xl sm:text-2xl font-bold tracking-tighter animate-fade-in-left">
                   Find Publications
-                  <span className="block text-base sm:text-lg text-red-600 hover:underline transition-all duration-300">
-                    Hel Daabacaadyada
-                  </span>
                 </h2>
                 <div className="flex items-center gap-4 w-full sm:w-auto">
                   <div className="relative flex-1 sm:flex-initial">
@@ -177,16 +154,10 @@ export default function DownloadsAndPublicationsPage() {
                       <FileText className="h-5 w-5 text-red-600 mt-1 flex-shrink-0" />
                       <div>
                         {pub.title}
-                        <span className="block text-xs sm:text-sm text-red-500 group-hover:underline transition-all duration-300">
-                          {pub.soTitle}
-                        </span>
                       </div>
                     </CardTitle>
                     <CardDescription className="mt-2 text-sm text-gray-600">
                       {pub.description}
-                      <span className="block text-xs text-red-400 mt-1">
-                        {pub.soDescription}
-                      </span>
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -195,9 +166,6 @@ export default function DownloadsAndPublicationsPage() {
                     >
                       <Download className="mr-2 h-4 w-4" />
                       Download
-                      <span className="block text-xs text-red-100 group-hover:underline transition-all duration-300">
-                        Soo deji
-                      </span>
                     </Button>
                   </CardContent>
                 </Card>
@@ -207,7 +175,6 @@ export default function DownloadsAndPublicationsPage() {
             {filteredPublications.length === 0 && (
               <div className="text-center py-12">
                 <p className="text-gray-500">No publications found</p>
-                <p className="text-sm text-red-400">Ma jiraan daabacaadyo la helay</p>
               </div>
             )}
           </div>

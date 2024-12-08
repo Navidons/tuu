@@ -7,52 +7,64 @@ import Script from 'next/script'
 const programs = [
   {
     faculty: "Business & Management",
-    soFaculty: "Ganacsiga & Maamulka",
     programs: [
-      { name: "Business Administration", soName: "Maamulka Ganacsiga" },
-      { name: "Accounting & Finance", soName: "Xisaabaadka & Maaliyadda" },
-      { name: "Banking & Finance", soName: "Bangiyada & Maaliyadda" },
-      { name: "Procurement, Logistics & Supply Chain Management", soName: "Iibsiga, Gaadiidka & Maaraynta Sahayda" },
-      { name: "Human Resource Management", soName: "Maamulka Shaqaalaha" },
-      { name: "Marketing", soName: "Suuq-geynta" }
+      { name: "Bachelor of Business Administration" },
+      { name: "Bachelor of Accounting and Finance" },
+      { name: "Bachelor of Banking and Finance" },
+      { name: "Bachelor of Procurement, Logistics and Supplies Chain Management" },
+      { name: "Bachelor of Human Resource Management" },
+      { name: "Bachelor of Marketing" },
+      { name: "Master of Business Administration" },
+      { name: "Master of Accounting & Finance" },
+      { name: "Master of Human Resources Management" },
+      { name: "Master of Marketing Management" },
+      { name: "Master of Procurement, Logistics and Supplies Chain Management" }
     ]
   },
   {
     faculty: "Computing & IT",
-    soFaculty: "Kombuyuutarka & IT",
     programs: [
-      { name: "Computer Science", soName: "Sayniska Kombuyuutarka" },
-      { name: "Information Technology", soName: "Teknoolojiyada Macluumaadka" },
-      { name: "Software Engineering", soName: "Injineerinka Software-ka" }
+      { name: "Bachelor of Science in Software Engineering" },
+      { name: "Bachelor of Science in Computer Science" },
+      { name: "Bachelor of Science in Information Technology" },
+      { name: "Master of Science in Information Technology" }
     ]
   },
   {
     faculty: "Social Sciences",
-    soFaculty: "Sayniska Bulshada",
     programs: [
-      { name: "Public Administration & Management", soName: "Maamulka Dadweynaha & Maaraynta" },
-      { name: "International Relations & Diplomatic Studies", soName: "Xiriirrada Caalamiga & Daraasaadka Diblomaasiyada" },
-      { name: "Development Studies", soName: "Daraasaadka Horumarinta" },
-      { name: "Social Work & Social Administration", soName: "Shaqada Bulshada & Maamulka Bulshada" },
-      { name: "Public Relations & Media Management", soName: "Xiriirka Dadweynaha & Maamulka Warbaahinta" },
-      { name: "Project Planning & Management", soName: "Qorshaynta & Maaraynta Mashruucyada" }
+      { name: "Bachelor of International Relations and Diplomatic Studies" },
+      { name: "Bachelor of Arts in Public Administration and Management" },
+      { name: "Bachelor of Arts in Social Works and Social Administration" },
+      { name: "Bachelor of Project Planning and Management" },
+      { name: "Bachelor of Arts in Public Relations and Media Management" },
+      { name: "Master of Arts in International Relations and Diplomatic Studies" },
+      { name: "Master of Arts in Public Administration and Management" },
+      { name: "Master of Arts in Development Studies" },
+      { name: "Master of Project Planning and Management" }
     ]
   },
   {
     faculty: "Health Sciences",
-    soFaculty: "Sayniska Caafimaadka",
     programs: [
-      { name: "Public Health", soName: "Caafimaadka Dadweynaha" },
-      { name: "Nutrition & Food Science", soName: "Nafaqada & Sayniska Cuntada" },
-      { name: "Health Service & Management", soName: "Adeegga Caafimaadka & Maaraynta" }
+      { name: "Bachelor of Public Health" },
+      { name: "Bachelor of Nutrition and Food Science" },
+      { name: "Bachelor of Science in Health Service & Management" },
+      { name: "Master of Public Health" },
+      { name: "Master of Nutrition and Food Science" }
     ]
   },
   {
     faculty: "Education",
-    soFaculty: "Waxbarashada",
     programs: [
-      { name: "Education Policy, Planning & Management", soName: "Siyaasadda Waxbarashada, Qorsheynta & Maaraynta" },
-      { name: "Education Leadership & Management", soName: "Hoggaaminta Waxbarashada & Maaraynta" }
+      { name: "Master of Education in Policy, Planning & Management" },
+      { name: "Master of Education in Leadership and Management" }
+    ]
+  },
+  {
+    faculty: "Foundation",
+    programs: [
+      { name: "Foundation Program for Starters" }
     ]
   }
 ]
@@ -206,9 +218,6 @@ export function Header() {
             <Link href="/" className="flex items-center justify-center">
               <span className="text-lg font-bold text-red-700">
                 The Unity University
-                <span className="block text-xs text-red-500 hover:underline transition-all duration-300">
-                  Jaamacadda Midnimada
-                </span>
               </span>
             </Link>
           </div>
@@ -219,9 +228,6 @@ export function Header() {
           <Link href="/" className="flex items-center justify-center">
             <span className="text-lg font-bold text-red-700">
               The Unity University
-              <span className="block text-xs text-red-500 hover:underline transition-all duration-300">
-                Jaamacadda Midnimada
-              </span>
             </span>
           </Link>
         </div>
@@ -229,36 +235,33 @@ export function Header() {
         {/* Navigation Links */}
         <nav className={`${isMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-6 pb-4 lg:pb-0 lg:order-3`}>
           {[
-            { en: "Home", so: "Guriga", href: "/" },
-            { en: "Programs", so: "Barnaamijyada", href: "#", dropdown: true },
-            { en: "About", so: "Ku saabsan", href: "/about" },
-            { en: "Contact", so: "La xiriir", href: "/contact" },
-            { en: "Downloads & Publications", so: "Soo-saaridda & Qoraallada", href: "/downloads_publications" },
-            { en: "News & Events", so: "Warbixin & Dhibcaha", href: "/news_events" }
+            { name: "Home", href: "/" },
+            { name: "Programs", href: "#", dropdown: true },
+            { name: "About", href: "/about" },
+            { name: "Contact", href: "/contact" },
+            { name: "Downloads & Publications", href: "/downloads_publications" },
+            { name: "News & Events", href: "/news_events" }
           ].map((item) => (
             <div
-              key={item.en}
+              key={item.name}
               className="group relative"
-              onMouseEnter={() => handleItemHover(item.en)}
+              onMouseEnter={() => handleItemHover(item.name)}
               onMouseLeave={() => !isMobile && setHoveredItem(null)}
             >
               <Link
                 href={item.href}
                 className="text-sm font-medium hover:text-red-600 transition-colors duration-300 block lg:inline-block"
                 onClick={() => {
-                  handleItemClick(item.en)
+                  handleItemClick(item.name)
                   if (!item.dropdown) {
                     setIsMenuOpen(false)
                   }
                 }}
               >
-                {item.en}
+                {item.name}
                 {item.dropdown && <ChevronDown className="inline-block ml-1 h-4 w-4" />}
-                <span className="block text-xs text-red-400 group-hover:underline transition-all duration-300">
-                  {item.so}
-                </span>
               </Link>
-              {item.dropdown && (hoveredItem === item.en || (isMobile && hoveredItem === item.en)) && (
+              {item.dropdown && (hoveredItem === item.name || (isMobile && hoveredItem === item.name)) && (
                 <div 
                   ref={menuRef}
                   className="lg:absolute relative right-0 top-full mt-2 w-64 bg-white border border-red-200 rounded-md shadow-lg z-50"
@@ -275,7 +278,6 @@ export function Header() {
                           <div className="flex items-center justify-between">
                             <div>
                               <h3 className="font-semibold text-red-700 text-sm">{faculty.faculty}</h3>
-                              <h4 className="text-xs text-red-500">{faculty.soFaculty}</h4>
                             </div>
                             <ChevronRight className="h-4 w-4 text-red-400" />
                           </div>
@@ -295,7 +297,6 @@ export function Header() {
                                     }}
                                   >
                                     <span className="text-sm text-gray-900">{program.name}</span>
-                                    <span className="block text-xs text-red-400">{program.soName}</span>
                                   </Link>
                                 ))}
                               </div>
