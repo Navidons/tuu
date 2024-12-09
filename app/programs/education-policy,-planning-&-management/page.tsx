@@ -18,12 +18,11 @@ interface ProgramCardItem {
   description: string;
 }
 
-// Update the array to use the defined type
+// Ensure the array is explicitly typed
 const programItems: ProgramCardItem[] = [
-  // Example items
   { icon: <BookOpen />, title: "Education Policy Analysis", description: "Analyze educational policies." },
-  { icon: <TrendingUp />, title: "Strategic Planning in Education", description: "Plan educational strategies." },
-  // Add more items as needed
+  { icon: <BookOpen />, title: "Curriculum Development", description: "Design effective curricula." },
+  { icon: <BookOpen />, title: "Educational Leadership", description: "Lead educational institutions." }
 ];
 
 export default function EducationPolicyPlanningAndManagement() {
