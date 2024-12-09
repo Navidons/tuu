@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Stethoscope, TrendingUp, Users } from "lucide-react"
+import { ChevronRight, Stethoscope } from "lucide-react"
 import Image from 'next/image'
 
 interface ProgramItem {

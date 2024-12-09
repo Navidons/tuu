@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, BookOpen, TrendingUp, Users } from "lucide-react"
+import { ChevronRight, BookOpen } from "lucide-react"
 import Image from 'next/image'
 
 // Define the interface for the item

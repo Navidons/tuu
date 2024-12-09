@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, MessageSquare, Globe, TrendingUp } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
 
 export default function PublicRelationsAndMediaManagement() {
