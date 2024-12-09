@@ -20,11 +20,11 @@ export default function EducationLeadershipAndManagement() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/courses/education.jpg"
               alt="Education Leadership & Management"
               layout="fill"
               objectFit="cover"
-              className="w-full h-full"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -62,11 +62,11 @@ export default function EducationLeadershipAndManagement() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/courses/education.jpg"
                   alt="Education Leadership & Management Students"
                   layout="fill"
                   objectFit="cover"
-                  className="absolute inset-0 w-full h-full"
+                  priority
                 />
               </div>
             </div>

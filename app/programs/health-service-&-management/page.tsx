@@ -19,10 +19,11 @@ export default function HealthServiceAndManagement() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Health Service and Management"
+              src="/courses/health-sciences.jpg"
+              alt="Health Service & Management"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -60,10 +61,11 @@ export default function HealthServiceAndManagement() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Health Service and Management Students"
+                  src="/courses/health-sciences.jpg"
+                  alt="Health Service & Management Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>
@@ -76,23 +78,7 @@ export default function HealthServiceAndManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Stethoscope className="h-10 w-10 text-red-600" />,
-                  title: "Healthcare Expertise",
-                  description: "Gain comprehensive knowledge of healthcare systems and management.",
-                },
-                {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Leadership Development",
-                  description: "Develop skills to lead and innovate in healthcare organizations.",
-                },
-                {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Industry Connections",
-                  description: "Benefit from our partnerships with leading healthcare providers.",
-                },
-              ].map((item, index) => (
+              {[/* ... */].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

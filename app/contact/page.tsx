@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
 import Image from 'next/image'
 
@@ -138,7 +138,7 @@ export default function ContactPage() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        123 University Avenue
+                      JigJiga Yar Street near Masjid Jabir, Hargeisa, Somaliland
                       </p>
                     </CardContent>
                   </Card>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        +252 63 4049999
+                      +252 63 6359696
                       </p>
                     </CardContent>
                   </Card>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                     </CardHeader>
                     <CardContent>
                       <p>
-                        info@unityuniversity.edu
+                      info@tuu.university
                       </p>
                     </CardContent>
                   </Card>
@@ -174,21 +174,25 @@ export default function ContactPage() {
                     Follow Us
                   </h3>
                   <div className="flex space-x-4">
-                    <Link href="#" className="text-gray-500 hover:text-red-600 transition-colors duration-300">
-                      <Facebook className="w-6 h-6" />
+                    <Link href="https://www.facebook.com/theunityuniversity/" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                      <Facebook className="h-6 w-6" />
                       <span className="sr-only">Facebook</span>
                     </Link>
-                    <Link href="#" className="text-gray-500 hover:text-red-600 transition-colors duration-300">
-                      <Twitter className="w-6 h-6" />
+                    <Link href="https://x.com/ProfPLOLumumba/status/1605872680317616128?lang=en" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                      <Twitter className="h-6 w-6" />
                       <span className="sr-only">Twitter</span>
                     </Link>
-                    <Link href="#" className="text-gray-500 hover:text-red-600 transition-colors duration-300">
-                      <Linkedin className="w-6 h-6" />
+                    <Link href="https://www.instagram.com/p/Cmd3K5Oj1D1/?img_index=1" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="h-6 w-6" />
+                      <span className="sr-only">Instagram</span>
+                    </Link>
+                    <Link href="https://www.linkedin.com/company/the-unity-university/?originalSubdomain=so" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-6 w-6" />
                       <span className="sr-only">LinkedIn</span>
                     </Link>
-                    <Link href="#" className="text-gray-500 hover:text-red-600 transition-colors duration-300">
-                      <Instagram className="w-6 h-6" />
-                      <span className="sr-only">Instagram</span>
+                    <Link href="https://www.youtube.com/watch?v=8vBnxHefYZs" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                      <Youtube className="h-6 w-6" />
+                      <span className="sr-only">YouTube</span>
                     </Link>
                   </div>
                 </div>

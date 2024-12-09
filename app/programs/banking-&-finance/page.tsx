@@ -20,11 +20,11 @@ export default function BankingAndFinance() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/banking-finance-hero.jpg"
-              alt="Banking and Finance"
+              src="/courses/finance.jpg"
+              alt="Banking & Finance"
               layout="fill"
               objectFit="cover"
-              className="w-full h-full"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -62,11 +62,11 @@ export default function BankingAndFinance() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/banking-finance-overview.jpg"
-                  alt="Banking and Finance Students"
+                  src="/courses/finance.jpg"
+                  alt="Banking & Finance Students"
                   layout="fill"
                   objectFit="cover"
-                  className="absolute inset-0 w-full h-full"
+                  priority
                 />
               </div>
             </div>

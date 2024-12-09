@@ -19,10 +19,11 @@ export default function EducationPolicyPlanningAndManagement() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/courses/education.jpg"
               alt="Education Policy, Planning & Management"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -60,10 +61,11 @@ export default function EducationPolicyPlanningAndManagement() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/courses/education.jpg"
                   alt="Education Policy, Planning & Management Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>
@@ -76,23 +78,7 @@ export default function EducationPolicyPlanningAndManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <BookOpen className="h-10 w-10 text-red-600" />,
-                  title: "Comprehensive Curriculum",
-                  description: "Gain a holistic understanding of education systems and policies.",
-                },
-                {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Policy Analysis Skills",
-                  description: "Develop expertise in analyzing and shaping educational policies.",
-                },
-                {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Global Perspective",
-                  description: "Learn from international case studies and best practices.",
-                },
-              ].map((item, index) => (
+              {[/* ... */].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

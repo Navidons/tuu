@@ -75,10 +75,16 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024)
+      if (window.innerWidth >= 1024) {
+        setIsMenuOpen(true)
+      } else {
+        setIsMenuOpen(false)
+      }
     }
     handleResize()
     window.addEventListener('resize', handleResize)
@@ -88,20 +94,67 @@ export function Header() {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setHoveredItem(null)
-        setHoveredFaculty(null)
+        if (!isMobile) {
+          if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+          }
+          timeoutRef.current = setTimeout(() => {
+            setHoveredItem(null)
+            setHoveredFaculty(null)
+          }, 100)
+        }
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [isMobile])
 
   const handleItemHover = (item: string) => {
     if (!isMobile) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
       setHoveredItem(item)
       if (item !== 'Programs') {
         setHoveredFaculty(null)
       }
+    }
+  }
+
+  const handleItemLeave = () => {
+    if (!isMobile) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+      timeoutRef.current = setTimeout(() => {
+        setHoveredItem(null)
+        setHoveredFaculty(null)
+      }, 300)
+    }
+  }
+
+  const handleFacultyHover = (faculty: string) => {
+    if (!isMobile) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+      setHoveredFaculty(faculty)
+    }
+  }
+
+  const handleFacultyLeave = () => {
+    if (!isMobile) {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+      timeoutRef.current = setTimeout(() => {
+        setHoveredFaculty(null)
+      }, 300)
     }
   }
 
@@ -113,12 +166,6 @@ export function Header() {
       } else {
         setHoveredItem(item)
       }
-    }
-  }
-
-  const handleFacultyHover = (faculty: string) => {
-    if (!isMobile) {
-      setHoveredFaculty(faculty)
     }
   }
 
@@ -147,7 +194,7 @@ export function Header() {
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-600">
               <Phone className="h-4 w-4"/>
-              <span>+252 63 4210013</span>
+              <span>+252 63 6359696</span>
             </div>
             <div className="text-sm text-gray-600">
               <span className="font-medium">Welcome to The Unity University</span>
@@ -246,7 +293,7 @@ export function Header() {
               key={item.name}
               className="group relative"
               onMouseEnter={() => handleItemHover(item.name)}
-              onMouseLeave={() => !isMobile && setHoveredItem(null)}
+              onMouseLeave={handleItemLeave}
             >
               <Link
                 href={item.href}
@@ -265,6 +312,12 @@ export function Header() {
                 <div 
                   ref={menuRef}
                   className="lg:absolute relative right-0 top-full mt-2 w-64 bg-white border border-red-200 rounded-md shadow-lg z-50"
+                  onMouseEnter={() => {
+                    if (timeoutRef.current) {
+                      clearTimeout(timeoutRef.current)
+                    }
+                  }}
+                  onMouseLeave={handleItemLeave}
                 >
                   <div className="flex">
                     <div className="w-full lg:w-64">
@@ -273,6 +326,7 @@ export function Header() {
                           key={faculty.faculty} 
                           className="p-2 hover:bg-red-50 cursor-pointer relative"
                           onMouseEnter={() => handleFacultyHover(faculty.faculty)}
+                          onMouseLeave={handleFacultyLeave}
                           onClick={() => handleFacultyClick(faculty.faculty)}
                         >
                           <div className="flex items-center justify-between">
@@ -283,20 +337,29 @@ export function Header() {
                           </div>
                           
                           {(hoveredFaculty === faculty.faculty || (isMobile && hoveredFaculty === faculty.faculty)) && (
-                            <div className="lg:absolute lg:left-full lg:top-0 lg:-mt-2 mt-2 w-64 bg-white border border-red-200 rounded-md shadow-lg">
+                            <div 
+                              className="lg:absolute lg:left-full lg:top-0 lg:-mt-2 mt-2 w-64 bg-white border border-red-200 rounded-md shadow-lg"
+                              onMouseEnter={() => {
+                                if (timeoutRef.current) {
+                                  clearTimeout(timeoutRef.current)
+                                }
+                              }}
+                              onMouseLeave={handleFacultyLeave}
+                            >
                               <div className="py-1">
                                 {faculty.programs.map((program) => (
                                   <Link
                                     key={program.name}
                                     href={program.path}
-                                    className="block px-4 py-2 hover:bg-red-50"
-                                    onClick={() => {
+                                    className="block px-4 py-2 hover:bg-red-50 text-sm text-gray-900"
+                                    onClick={(e) => {
+                                      e.stopPropagation()
                                       setIsMenuOpen(false)
                                       setHoveredItem(null)
                                       setHoveredFaculty(null)
                                     }}
                                   >
-                                    <span className="text-sm text-gray-900">{program.name}</span>
+                                    {program.name}
                                   </Link>
                                 ))}
                               </div>

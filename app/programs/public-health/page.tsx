@@ -19,10 +19,11 @@ export default function PublicHealth() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/courses/health-sciences.jpg"
               alt="Public Health"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -60,10 +61,11 @@ export default function PublicHealth() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/courses/health-sciences.jpg"
                   alt="Public Health Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>

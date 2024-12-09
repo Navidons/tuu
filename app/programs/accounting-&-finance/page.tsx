@@ -19,11 +19,11 @@ export default function AccountingAndFinance() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Accounting and Finance"
+              src="/courses/finance.jpg"
+              alt="Accounting & Finance"
               layout="fill"
               objectFit="cover"
-              className="w-full h-full"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -45,7 +45,7 @@ export default function AccountingAndFinance() {
                   Program Overview
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Accounting & Finance program provides a solid foundation in financial reporting, analysis, and management. You&apos;ll develop the skills to navigate complex financial landscapes and make informed business decisions.
+                  Our Accounting & Finance program provides a solid foundation in financial reporting, analysis, and management. You'll develop the skills to navigate complex financial landscapes and make informed business decisions.
                 </p>
                 <ul className="space-y-2 mb-6">
                   {["Financial Accounting", "Managerial Accounting", "Corporate Finance", "Taxation", "Auditing"].map((item, index) => (
@@ -61,11 +61,11 @@ export default function AccountingAndFinance() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Accounting and Finance Students"
+                  src="/courses/finance.jpg"
+                  alt="Accounting & Finance Students"
                   layout="fill"
                   objectFit="cover"
-                  className="absolute inset-0"
+                  priority
                 />
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function AccountingAndFinance() {
               Start Your Journey in Accounting & Finance
             </h2>
             <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Accounting & Finance program and gain the skills to become a financial leader in today&apos;s dynamic business world.
+              Join our Accounting & Finance program and gain the skills to become a financial leader in today's dynamic business world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">

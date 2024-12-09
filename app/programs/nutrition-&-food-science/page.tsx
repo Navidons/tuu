@@ -19,10 +19,11 @@ export default function NutritionAndFoodScience() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Nutrition and Food Science"
+              src="/courses/health-sciences.jpg"
+              alt="Nutrition & Food Science"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -47,10 +48,16 @@ export default function NutritionAndFoodScience() {
                   Our Nutrition & Food Science program combines the study of nutrition with food technology and safety. You&apos;ll gain a deep understanding of how food affects human health, learn about food production processes, and develop skills in creating nutritious and safe food products.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  {["Human Nutrition", "Food Chemistry", "Food Microbiology", "Product Development", "Food Safety and Quality Control"].map((item, index) => (
+                  {[
+                    { title: "Human Nutrition", icon: <Apple /> },
+                    { title: "Food Chemistry", icon: <FlaskConical /> },
+                    { title: "Food Microbiology", icon: <Utensils /> },
+                    { title: "Product Development", icon: <ChevronRight /> },
+                    { title: "Food Safety and Quality Control", icon: <ChevronRight /> }
+                  ].map((item, index) => (
                     <li key={index} className="flex items-center text-gray-700 hover:translate-x-2 transition-transform duration-300 ease-in-out">
                       <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
-                      {item}
+                      {item.title}
                     </li>
                   ))}
                 </ul>
@@ -60,10 +67,11 @@ export default function NutritionAndFoodScience() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Nutrition and Food Science Students"
+                  src="/courses/health-sciences.jpg"
+                  alt="Nutrition & Food Science Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>
@@ -77,21 +85,11 @@ export default function NutritionAndFoodScience() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                {
-                  icon: <Apple className="h-10 w-10 text-red-600" />,
-                  title: "Nutrition Expertise",
-                  description: "Gain in-depth knowledge of human nutrition and dietary needs.",
-                },
-                {
-                  icon: <FlaskConical className="h-10 w-10 text-red-600" />,
-                  title: "Food Science Innovation",
-                  description: "Learn cutting-edge techniques in food product development.",
-                },
-                {
-                  icon: <Utensils className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Ready Skills",
-                  description: "Develop practical skills valued in the food industry.",
-                },
+                { title: "Human Nutrition", icon: <Apple /> },
+                { title: "Food Chemistry", icon: <FlaskConical /> },
+                { title: "Food Microbiology", icon: <Utensils /> },
+                { title: "Product Development", icon: <ChevronRight /> },
+                { title: "Food Safety and Quality Control", icon: <ChevronRight /> }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -103,9 +101,7 @@ export default function NutritionAndFoodScience() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">
-                      {item.description}
-                    </p>
+                    {/* Optional: Add more details here */}
                   </CardContent>
                 </Card>
               ))}

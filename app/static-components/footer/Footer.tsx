@@ -16,12 +16,11 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2 hover:text-red-400 transition-colors duration-200">
                 <Phone className="h-4 w-8"/>
-                <span>+252 63 4210013</span> |
-                <span>+252 63 7707788</span>
+                <span>+252 63 6359696</span>
               </div>
               <div className="flex items-center gap-2 hover:text-red-400 transition-colors duration-200">
                 <MapPin className="h-4 w-8"/>
-                <span>123 University Avenue</span>
+                <span>JigJiga Yar Street near Masjid Jabir, Hargeisa, Somaliland</span>
               </div>
             </div>
           </div>

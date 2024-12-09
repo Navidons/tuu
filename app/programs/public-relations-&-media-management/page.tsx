@@ -19,10 +19,11 @@ export default function PublicRelationsAndMediaManagement() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Public Relations and Media Management"
+              src="/courses/public-speaking.jpg"
+              alt="Public Relations & Media Management"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -61,10 +62,11 @@ export default function PublicRelationsAndMediaManagement() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Public Relations and Media Management Students"
+                  src="/courses/public-speaking.jpg"
+                  alt="Public Relations & Media Management Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>
@@ -77,23 +79,7 @@ export default function PublicRelationsAndMediaManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <MessageSquare className="h-10 w-10 text-red-600" />,
-                  title: "Strategic Communication",
-                  description: "Learn to craft and deliver impactful messages across various media.",
-                },
-                {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Digital Expertise",
-                  description: "Gain proficiency in managing digital platforms and social media.",
-                },
-                {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Aligned Skills",
-                  description: "Develop skills that meet the evolving needs of the PR and media industry.",
-                },
-              ].map((item, index) => (
+              {[/* ... */].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

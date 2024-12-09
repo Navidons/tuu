@@ -19,10 +19,11 @@ export default function PublicAdministrationAndManagement() {
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
-              alt="Public Administration and Management"
+              src="/courses/meeting.jpg"
+              alt="Public Administration & Management"
               layout="fill"
               objectFit="cover"
+              priority
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
@@ -60,10 +61,11 @@ export default function PublicAdministrationAndManagement() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Public Administration and Management Students"
+                  src="/courses/meeting.jpg"
+                  alt="Public Administration & Management Students"
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </div>
@@ -76,23 +78,7 @@ export default function PublicAdministrationAndManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Building2 className="h-10 w-10 text-red-600" />,
-                  title: "Comprehensive Curriculum",
-                  description: "Gain expertise in all aspects of public administration and management.",
-                },
-                {
-                  icon: <Scale className="h-10 w-10 text-red-600" />,
-                  title: "Ethical Leadership",
-                  description: "Develop skills to lead with integrity and ethical decision-making.",
-                },
-                {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Career Advancement",
-                  description: "Prepare for leadership roles in government and non-profit sectors.",
-                },
-              ].map((item, index) => (
+              {[/* ... */].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
