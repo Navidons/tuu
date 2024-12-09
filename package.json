@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cross-env DISABLE_ESLINT_PLUGIN=true next build",
+    "build": "DISABLE_ESLINT_PLUGIN=true next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -37,6 +37,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
     "eslint-config-prettier": "^9.1.0",
