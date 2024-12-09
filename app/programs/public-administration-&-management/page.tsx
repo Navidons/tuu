@@ -25,14 +25,14 @@ export default function PublicAdministrationAndManagement() {
               objectFit="cover"
               priority
             />
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-blue-900/60" />
           </div>
           <div className="container mx-auto px-4 relative z-10 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Public Administration &amp; Management
+              Public Administration & Management
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Shape public policy and lead effective governance
+              Lead public service through effective administration and management
             </p>
           </div>
         </section>
@@ -41,7 +41,7 @@ export default function PublicAdministrationAndManagement() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-red-800">
+                <h2 className="text-3xl font-bold mb-4 text-blue-800">
                   Program Overview
                 </h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
@@ -50,12 +50,12 @@ export default function PublicAdministrationAndManagement() {
                 <ul className="space-y-2 mb-6">
                   {["Public Policy Analysis", "Governance and Ethics", "Public Finance", "Strategic Management", "Leadership in Public Sector"].map((item, index) => (
                     <li key={index} className="flex items-center text-gray-700 hover:translate-x-2 transition-transform duration-300 ease-in-out">
-                      <ChevronRight className="h-5 w-5 text-red-600 mr-2" />
+                      <ChevronRight className="h-5 w-5 text-blue-600 mr-2" />
                       {item}
                     </li>
                   ))}
                 </ul>
-                <Button className="bg-red-700 hover:bg-red-800 text-white">
+                <Button className="bg-blue-700 hover:bg-blue-800 text-white">
                   Apply Now
                 </Button>
               </div>
@@ -74,15 +74,28 @@ export default function PublicAdministrationAndManagement() {
 
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center text-red-800">
+            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* ... */].map((item, index) => (
+              {[
+                {
+                  title: "Expert Faculty",
+                  description: "Learn from experienced professionals with extensive public sector backgrounds."
+                },
+                {
+                  title: "Practical Curriculum",
+                  description: "Gain hands-on skills through case studies, simulations, and real-world projects."
+                },
+                {
+                  title: "Career Opportunities",
+                  description: "Prepare for leadership roles in government, non-profits, and international organizations."
+                }
+              ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
-                      {item.icon}
+                      <ChevronRight className="h-10 w-10 text-blue-600" />
                       <div>
                         {item.title}
                       </div>
@@ -98,7 +111,7 @@ export default function PublicAdministrationAndManagement() {
             </div>
           </div>
         </section>
-        <section className="py-8 md:py-12 bg-red-800 text-white">
+        <section className="py-8 md:py-12 bg-blue-800 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Lead the Future of Public Service

@@ -62,7 +62,7 @@ export default function ComputerScience() {
                     </li>
                   ))}
                 </ul>
-                <Button className="bg-red-700 hover:bg-red-800 text-white">
+                <Button className="bg-red-600 hover:bg-red-700 text-white">
                   Apply Now
                 </Button>
               </div>
@@ -89,7 +89,7 @@ export default function ComputerScience() {
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
-                      {item.icon}
+                      <ChevronRight className="h-10 w-10 text-red-600" />
                       <div>
                         {item.title}
                       </div>
@@ -108,17 +108,17 @@ export default function ComputerScience() {
 
         <section className="py-8 md:py-12 bg-red-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-red-800">
               Start Your Tech Journey
             </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
+            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base text-gray-200">
               Join our Computer Science program and become a part of the digital revolution shaping our world.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-red-500 hover:from-yellow-500 hover:to-red-600 text-white shadow-lg transition-all duration-300">
+              <Button className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white shadow-lg transition-all duration-300">
                 Apply Now
               </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg transition-all duration-300">
+              <Button className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white shadow-lg transition-all duration-300">
                 Request Information
               </Button>
             </div>
