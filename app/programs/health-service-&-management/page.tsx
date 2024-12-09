@@ -11,6 +11,30 @@ import {
 import { ChevronRight, Stethoscope, TrendingUp, Users } from "lucide-react"
 import Image from 'next/image'
 
+interface ProgramItem {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+const programItems: ProgramItem[] = [
+  {
+    icon: <Stethoscope className="w-6 h-6 text-red-800" />,
+    title: "Healthcare Management",
+    description: "Learn about managing healthcare systems efficiently."
+  },
+  {
+    icon: <Stethoscope className="w-6 h-6 text-red-800" />,
+    title: "Clinical Services",
+    description: "Understand the intricacies of clinical service management."
+  },
+  {
+    icon: <Stethoscope className="w-6 h-6 text-red-800" />,
+    title: "Hospital Administration",
+    description: "Master the skills needed for effective hospital administration."
+  }
+];
+
 export default function HealthServiceAndManagement() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -78,7 +102,7 @@ export default function HealthServiceAndManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* ... */].map((item, index) => (
+              {programItems.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

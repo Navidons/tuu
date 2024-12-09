@@ -11,7 +11,31 @@ import {
 import { ChevronRight, TrendingUp, Globe, Target } from "lucide-react"
 import Image from 'next/image'
 
+interface ProgramItem {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
 export default function Marketing() {
+  const programItems: ProgramItem[] = [
+    {
+      icon: <TrendingUp className="h-10 w-10 text-red-600" />,
+      title: "Industry-Relevant Skills",
+      description: "Gain practical skills in digital marketing, analytics, and brand management.",
+    },
+    {
+      icon: <Globe className="h-10 w-10 text-red-600" />,
+      title: "Global Perspective",
+      description: "Understand international marketing strategies and cross-cultural consumer behavior.",
+    },
+    {
+      icon: <Target className="h-10 w-10 text-red-600" />,
+      title: "Creative Problem-Solving",
+      description: "Develop innovative solutions to real-world marketing challenges.",
+    },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -78,23 +102,7 @@ export default function Marketing() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* eslint-disable @typescript-eslint/no-unused-vars */
-                {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Relevant Skills",
-                  description: "Gain practical skills in digital marketing, analytics, and brand management.",
-                },
-                {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Global Perspective",
-                  description: "Understand international marketing strategies and cross-cultural consumer behavior.",
-                },
-                {
-                  icon: <Target className="h-10 w-10 text-red-600" />,
-                  title: "Creative Problem-Solving",
-                  description: "Develop innovative solutions to real-world marketing challenges.",
-                },
-              ].map((item, index) => (
+              {programItems.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

@@ -11,7 +11,31 @@ import {
 import { ChevronRight, Globe, Users, Briefcase } from "lucide-react"
 import Image from 'next/image'
 
+interface ProgramItem {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
 export default function InternationalRelationsAndDiplomaticStudies() {
+  const programItems: ProgramItem[] = [
+    {
+      icon: <Globe className="h-10 w-10 text-red-600" />,
+      title: "Global Perspective",
+      description: "Gain insights into international politics and global affairs.",
+    },
+    {
+      icon: <Users className="h-10 w-10  text-red-600" />,
+      title: "Diplomatic Skills",
+      description: "Develop negotiation and cross-cultural communication skills.",
+    },
+    {
+      icon: <Briefcase className="h-10 w-10 text-red-600" />,
+      title: "Career Opportunities",
+      description: "Prepare for roles in diplomacy, international organizations, and global NGOs.",
+    },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -78,23 +102,7 @@ export default function InternationalRelationsAndDiplomaticStudies() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Global Perspective",
-                  description: "Gain insights into international politics and global affairs.",
-                },
-                {
-                  icon: <Users className="h-10 w-10  text-red-600" />,
-                  title: "Diplomatic Skills",
-                  description: "Develop negotiation and cross-cultural communication skills.",
-                },
-                {
-                  icon: <Briefcase className="h-10 w-10 text-red-600" />,
-                  title: "Career Opportunities",
-                  description: "Prepare for roles in diplomacy, international organizations, and global NGOs.",
-                },
-              ].map((item, index) => (
+              {programItems.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
