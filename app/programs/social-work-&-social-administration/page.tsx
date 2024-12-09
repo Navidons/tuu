@@ -12,21 +12,6 @@ import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
 
 export default function SocialWorkAndSocialAdministration() {
-  const programHighlights = [
-    {
-      title: "Comprehensive Curriculum",
-      description: "Our program offers a holistic approach to social work, covering theoretical foundations and practical applications."
-    },
-    {
-      title: "Hands-on Experience",
-      description: "Gain real-world experience through internships and community engagement projects."
-    },
-    {
-      title: "Expert Faculty",
-      description: "Learn from experienced professionals with deep insights into social work and administration."
-    }
-  ];
-
   const whyChooseProgramItems = [
     {
       title: "Comprehensive Curriculum",
