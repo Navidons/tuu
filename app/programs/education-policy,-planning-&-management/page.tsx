@@ -11,6 +11,21 @@ import {
 import { ChevronRight, BookOpen, TrendingUp, Users } from "lucide-react"
 import Image from 'next/image'
 
+// Define the interface for the item
+interface ProgramCardItem {
+  icon: JSX.Element; // or the specific type of your icon
+  title: string;
+  description: string;
+}
+
+// Update the array to use the defined type
+const programItems: ProgramCardItem[] = [
+  // Example items
+  { icon: <BookOpen />, title: "Education Policy Analysis", description: "Analyze educational policies." },
+  { icon: <TrendingUp />, title: "Strategic Planning in Education", description: "Plan educational strategies." },
+  // Add more items as needed
+];
+
 export default function EducationPolicyPlanningAndManagement() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -78,7 +93,7 @@ export default function EducationPolicyPlanningAndManagement() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* ... */].map((item, index) => (
+              {programItems.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
