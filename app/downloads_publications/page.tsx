@@ -84,7 +84,7 @@ export default function DownloadsAndPublicationsPage() {
       <main className="flex-1">
         <section className="w-full py-8 sm:py-12 md:py-16 lg:py-24 bg-cover bg-center relative">
           <Image
-            src="/university-banner.jpg"
+            src="/hero-section/hero.png"
             alt="University Banner"
             layout="fill"
             objectFit="cover"
