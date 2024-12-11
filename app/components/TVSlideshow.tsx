@@ -18,13 +18,25 @@ const mediaContent: Media[] = [
 
 export const TVSlideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showTransition, setShowTransition] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === mediaContent.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
+      // Show transition
+      setShowTransition(true);
+      
+      // Change slide after transition animation
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => 
+          prevIndex === mediaContent.length - 1 ? 0 : prevIndex + 1
+        );
+        
+        // Hide transition
+        setTimeout(() => {
+          setShowTransition(false);
+        }, 1000);
+      }, 1000);
+    }, 7000); // Total cycle: 7 seconds (5s content + 2s transition)
 
     return () => clearInterval(timer);
   }, []);
@@ -56,6 +68,21 @@ export const TVSlideshow = () => {
           
           {/* Content */}
           <div className="relative w-full h-full">
+            {/* Logo Transition */}
+            <div className={`absolute inset-0 z-50 transition-all duration-1000 bg-black flex items-center justify-center
+              ${showTransition ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+              <div className={`relative w-40 h-40 transition-all duration-1000 ${showTransition ? 'scale-100 rotate-0' : 'scale-50 rotate-180'}`}>
+                <Image
+                  src="/logo.png"
+                  alt="Unity University"
+                  layout="fill"
+                  objectFit="contain"
+                  className="animate-pulse"
+                />
+              </div>
+            </div>
+
+            {/* Main Content */}
             {mediaContent.map((media, index) => (
               <div
                 key={index}

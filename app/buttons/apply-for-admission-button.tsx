@@ -27,7 +27,11 @@ const programs = [
   "Health Sciences"
 ]
 
-export function ApplyForAdmissionButton() {
+interface ApplyForAdmissionButtonProps {
+  className?: string;
+}
+
+export function ApplyForAdmissionButton({ className }: ApplyForAdmissionButtonProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -85,7 +89,7 @@ export function ApplyForAdmissionButton() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className="w-full bg-white text-green-600 hover:bg-green-100" size="lg">
+        <Button className={`w-full bg-white text-green-600 hover:bg-green-100 ${className}`} size="lg">
           Apply for Admission
         </Button>
       </DialogTrigger>

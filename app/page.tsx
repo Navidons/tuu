@@ -10,7 +10,6 @@ import {
 import { useState, useEffect } from 'react';
 
 import { ApplyNowButton } from "./buttons/apply-now-button";
-import { LearnMoreButton } from "./buttons/learn-more-button";
 import { ApplyForAdmissionButton } from "./buttons/apply-for-admission-button";
 import { RequestInformationButton } from "./buttons/request-information-button";
 import Image from 'next/image';
@@ -158,7 +157,6 @@ export default function LandingPage() {
                     </p>
                     <div className="flex gap-4 justify-center animate-bounce">
                       <ApplyNowButton />
-                      <LearnMoreButton />
                     </div>
                   </div>
                 </div>
@@ -273,7 +271,9 @@ export default function LandingPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-4">
                 <div className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-                  <ApplyForAdmissionButton />
+                  <ApplyForAdmissionButton 
+                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                  />
                 </div>
                 <div className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
                   <RequestInformationButton />
