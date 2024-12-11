@@ -5,7 +5,7 @@ import * as SelectPrimitive from "@radix-ui/react-select"
 import { Check, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-interface SelectProps {
+interface SelectProps extends React.RefAttributes<React.ElementRef<typeof SelectPrimitive.Root>> {
   id?: string;
   name?: string;
   required?: boolean;
