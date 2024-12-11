@@ -14,6 +14,7 @@ import { LearnMoreButton } from "./buttons/learn-more-button";
 import { ApplyForAdmissionButton } from "./buttons/apply-for-admission-button";
 import { RequestInformationButton } from "./buttons/request-information-button";
 import Image from 'next/image';
+import { TVSlideshow } from './components/TVSlideshow';
 
 const carouselData = [
   {
@@ -23,19 +24,19 @@ const carouselData = [
     highlight: "Excellence in Education"
   },
   {
-    image: "/hero-section/hero.png",
+    image: "/hero-section/university-campus-1.jpg",
     title: "Experience Campus Life",
     subtitle: "Join a Vibrant Community of Scholars",
     highlight: "Student Life"
   },
   {
-    image: "/hero-section/hero.png",
+    image: "/hero-section/research-innovation.jpg",
     title: "Leading Through Innovation",
     subtitle: "Pioneering Research and Development",
     highlight: "Research Excellence"
   },
   {
-    image: "/hero-section/hero.png",
+    image: "/hero-section/global-perspective.jpg",
     title: "Global Perspectives",
     subtitle: "Connect with Students Worldwide",
     highlight: "International Community"
@@ -249,15 +250,7 @@ export default function LandingPage() {
                   With a strong focus on research and innovation, we strive to create a vibrant community of scholars who are passionate about making a positive impact in the world.
                 </p>
               </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.05] transition-transform duration-300">
-                <Image
-                  src="/university-campus.jpg"
-                  alt="Campus"
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute inset-0 w-full h-full"
-                />
-              </div>
+              <TVSlideshow />
             </div>
           </div>
         </section>
