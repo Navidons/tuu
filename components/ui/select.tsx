@@ -2,11 +2,41 @@
 
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
-import { Check, ChevronDown, ChevronUp } from "lucide-react"
-
+import { Check, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const Select = SelectPrimitive.Root
+interface SelectProps {
+  id?: string;
+  name?: string;
+  required?: boolean;
+  value?: string;
+  onValueChange?: (value: string) => void;
+  children: React.ReactNode;
+}
+
+const Select: React.FC<SelectProps> = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Root>,
+  SelectProps
+>(({ id, name, required, value, onValueChange, children, ...props }, ref) => (
+  <SelectPrimitive.Root ref={ref} value={value} onValueChange={onValueChange} {...props}>
+    <SelectPrimitive.Trigger
+      id={id}
+      name={name}
+      required={required}
+      className="your-select-class"
+    >
+      {children}
+      <SelectPrimitive.Icon asChild>
+        <ChevronDown className="h-4 w-4 opacity-50" />
+      </SelectPrimitive.Icon>
+    </SelectPrimitive.Trigger>
+    <SelectPrimitive.Content>
+      {children}
+    </SelectPrimitive.Content>
+  </SelectPrimitive.Root>
+));
+
+Select.displayName = "Select";
 
 const SelectGroup = SelectPrimitive.Group
 
@@ -44,7 +74,7 @@ const SelectScrollUpButton = React.forwardRef<
     )}
     {...props}
   >
-    <ChevronUp className="h-4 w-4" />
+    <ChevronDown className="h-4 w-4" />
   </SelectPrimitive.ScrollUpButton>
 ))
 SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName
