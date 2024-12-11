@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export function ApplyNowButton({ className }: { className?: string }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -52,17 +51,7 @@ export function ApplyNowButton({ className }: { className?: string }) {
           </div>
           <div>
             <Label htmlFor="program" className="block text-sm font-medium text-gray-700">Program of Interest</Label>
-            <Select id="program" name="program" required>
-              <SelectTrigger className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50">
-                <SelectValue placeholder="Select a program" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="engineering">Engineering</SelectItem>
-                <SelectItem value="business">Business</SelectItem>
-                <SelectItem value="arts">Arts</SelectItem>
-                <SelectItem value="science">Science</SelectItem>
-              </SelectContent>
-            </Select>
+            <Input id="program" name="program" type="text" required className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" />
           </div>
           <Button type="submit" className="w-full bg-red-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300">
             {isSubmitting ? 'Submitting...' : 'Submit Application'}

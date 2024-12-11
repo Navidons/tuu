@@ -31,7 +31,7 @@ interface ApplyForAdmissionButtonProps {
   className?: string;
 }
 
-export function ApplyForAdmissionButton({ className }: ApplyForAdmissionButtonProps) {
+export const ApplyForAdmissionButton = ({ className }: ApplyForAdmissionButtonProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)

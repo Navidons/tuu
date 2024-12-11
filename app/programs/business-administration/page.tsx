@@ -1,7 +1,6 @@
 "use client"
 import { Header } from "../../static-components/header/Header"
 import { Footer } from "../../static-components/footer/Footer"
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -55,9 +54,6 @@ export default function BusinessAdministration() {
                     </li>
                   ))}
                 </ul>
-                <Button className="bg-red-700 hover:bg-red-800 text-white">
-                  Apply Now
-                </Button>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
                 <Image
@@ -123,14 +119,6 @@ export default function BusinessAdministration() {
             <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
               Join our Business Administration program and develop the skills to become a successful business leader in today&apos;s competitive market.
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-red-500 text-white hover:from-yellow-500 hover:to-red-600 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
-                Request Information
-              </Button>
-            </div>
           </div>
         </section>
       </main>
