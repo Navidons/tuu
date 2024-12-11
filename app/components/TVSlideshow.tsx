@@ -18,7 +18,6 @@ const mediaContent: Media[] = [
 
 export const TVSlideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isOn, setIsOn] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
