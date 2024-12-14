@@ -12,10 +12,9 @@ import { ChevronRight, TrendingUp, Globe, Target } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
-interface ProgramItem {
+type ProgramItemType = {
   icon: JSX.Element;
   title: string;
-  description: string;
 }
 
 export default function Marketing() {

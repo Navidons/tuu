@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, TrendingUp, Users, Globe, Briefcase } from "lucide-react"
+import { ChevronRight, TrendingUp, Globe, Briefcase } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 

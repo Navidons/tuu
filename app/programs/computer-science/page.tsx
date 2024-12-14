@@ -12,9 +12,9 @@ import { ChevronRight, Code, Database, Network } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
-// Define the interface for the item
-interface ProgramItem {
-  icon: JSX.Element; // Assuming icon is a JSX element
+// Define the type for the item
+type ProgramItemType = {
+  icon: JSX.Element;
   title: string;
   description: string;
 }

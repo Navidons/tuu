@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Server, Shield } from "lucide-react"
+import { ChevronRight, Globe, Database, Server, Shield } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
