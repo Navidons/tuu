@@ -82,7 +82,7 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={handleInputChange}
                           className="w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
-                          placeholder="John Doe"
+                          placeholder="Full Name"
                           required
                         />
                       </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={handleInputChange}
                           className="w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
-                          placeholder="john@example.com"
+                          placeholder="student@tuu.university"
                           required
                         />
                       </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-semibold">Email Us</h3>
-                        <p className="text-sm text-gray-600">info@university.edu</p>
+                        <p className="text-sm text-gray-600">info@tuu.university</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-semibold">Call Us</h3>
-                        <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                        <p className="text-sm text-gray-600">+252 634210013</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-semibold">Visit Us</h3>
-                        <p className="text-sm text-gray-600">123 University Ave, City, State 12345</p>
+                        <p className="text-sm text-gray-600">JigJiga Yar Street near Masjid Jabir, Hargeisa, Somaliland</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -184,19 +184,19 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold">Follow Us</h3>
                   <div className="flex space-x-4">
-                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                    <Link href="https://www.facebook.com/theunityuniversity/" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
                       <Facebook className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                    <Link href="https://x.com/ProfPLOLumumba/status/1605872680317616128?lang=en" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
                       <Twitter className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                    <Link href="https://www.linkedin.com/company/the-unity-university/?originalSubdomain=so" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                    <Link href="https://www.instagram.com/p/Cmd3K5Oj1D1/?img_index=1" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
                       <Instagram className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                    <Link href="https://www.youtube.com/watch?v=8vBnxHefYZs" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
                       <Youtube className="h-5 w-5 text-red-600" />
                     </Link>
                   </div>
