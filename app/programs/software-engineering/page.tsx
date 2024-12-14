@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Code, Layers, Users } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function SoftwareEngineering() {
   return (
@@ -80,19 +81,19 @@ export default function SoftwareEngineering() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Code className="w-6 h-6 text-red-800" />,
+                  icon: <Code className="h-6 w-6 text-red-600" />,
                   title: "Software Design",
-                  description: "Learn advanced software design principles and architectural patterns."
+                  description: "Learn advanced software design principles and architectural patterns"
                 },
                 {
-                  icon: <Layers className="w-6 h-6 text-red-800" />,
+                  icon: <Layers className="h-6 w-6 text-red-600" />,
                   title: "Technology Stack",
-                  description: "Master modern programming languages and development frameworks."
+                  description: "Master modern programming languages and development frameworks"
                 },
                 {
-                  icon: <Users className="w-6 h-6 text-red-800" />,
+                  icon: <Users className="h-6 w-6 text-red-600" />,
                   title: "Collaborative Development",
-                  description: "Develop skills in team-based software engineering practices."
+                  description: "Develop skills in team-based software engineering practices"
                 }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -115,24 +116,10 @@ export default function SoftwareEngineering() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Build the Future of Software
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Software Engineering program and become a creator of innovative digital solutions that shape our world.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Software Engineering"
+          description="Join our Software Engineering program and build the future through innovative software solutions."
+        />
       </main>
       <Footer />
     </div>

@@ -10,20 +10,24 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
+import { Users, Heart, Building } from "lucide-react"
 
 export default function SocialWorkAndSocialAdministration() {
   const whyChooseProgramItems = [
     {
-      title: "Comprehensive Curriculum",
-      description: "Our program offers a holistic approach to social work, covering theoretical foundations and practical skills."
+      icon: <Users className="h-6 w-6 text-red-600" />,
+      title: "Social Services",
+      description: "Learn to deliver effective social services"
     },
     {
-      title: "Experienced Faculty",
-      description: "Learn from professionals with extensive experience in social work and community development."
+      icon: <Heart className="h-6 w-6 text-red-600" />,
+      title: "Community Work",
+      description: "Develop community support programs"
     },
     {
-      title: "Practical Internships",
-      description: "Gain real-world experience through carefully curated internship opportunities with local organizations."
+      icon: <Building className="h-6 w-6 text-red-600" />,
+      title: "Administration",
+      description: "Master social service administration"
     }
   ];
 
@@ -97,7 +101,7 @@ export default function SocialWorkAndSocialAdministration() {
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
-                      <ChevronRight className="h-10 w-10 text-blue-600" />
+                      {item.icon}
                       <div>
                         {item.title}
                       </div>

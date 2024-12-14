@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Users, Briefcase, TrendingUp } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function HumanResourceManagement() {
   return (
@@ -80,20 +81,20 @@ export default function HumanResourceManagement() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Strategic HR Leadership",
-                  description: "Develop skills to become a strategic partner in organizational success.",
+                  icon: <Users className="h-6 w-6 text-red-600" />,
+                  title: "Talent Management",
+                  description: "Master strategies for attracting and retaining talent"
                 },
                 {
-                  icon: <Briefcase className="h-10 w-10 text-red-600" />,
-                  title: "Practical Industry Experience",
-                  description: "Gain hands-on experience through internships and case studies.",
+                  icon: <Briefcase className="h-6 w-6 text-red-600" />,
+                  title: "Employee Relations",
+                  description: "Learn to build positive workplace relationships"
                 },
                 {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Career Growth Opportunities",
-                  description: "Prepare for leadership roles in HR across various industries.",
-                },
+                  icon: <TrendingUp className="h-6 w-6 text-red-600" />,
+                  title: "Strategic HR",
+                  description: "Develop HR strategies aligned with business goals"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -115,24 +116,10 @@ export default function HumanResourceManagement() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Shape the Future of Work
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Human Resource Management program and become a key player in shaping organizational culture and driving employee success.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white border-red-300 hover:border-red-400 shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in HR Management"
+          description="Join our Human Resource Management program and become a strategic partner in organizational success."
+        />
       </main>
       <Footer />
     </div>

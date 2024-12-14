@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, TrendingUp, Globe, Target } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 interface ProgramItem {
   icon: JSX.Element;
@@ -102,7 +103,23 @@ export default function Marketing() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {programItems.map((item, index) => (
+              {[
+                {
+                  icon: <TrendingUp className="h-6 w-6 text-red-600" />,
+                  title: "Digital Marketing",
+                  description: "Master modern digital marketing strategies and tools"
+                },
+                {
+                  icon: <Globe className="h-6 w-6 text-red-600" />,
+                  title: "Global Marketing",
+                  description: "Learn to develop marketing strategies for global markets"
+                },
+                {
+                  icon: <Target className="h-6 w-6 text-red-600" />,
+                  title: "Strategic Planning",
+                  description: "Develop effective marketing plans and campaigns"
+                }
+              ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
@@ -123,24 +140,10 @@ export default function Marketing() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Launch Your Marketing Career
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Marketing program and become a creative force in shaping brand narratives and driving business growth in the digital era.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-3 font-semibold tracking-wide transform hover:scale-105">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-3 font-semibold tracking-wide transform hover:scale-105">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Marketing"
+          description="Join our Marketing program and master the art and science of modern marketing strategies."
+        />
       </main>
       <Footer />
     </div>

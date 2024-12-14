@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, BookOpen, GraduationCap, Users } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 
 export default function BankingAndFinance() {
@@ -81,20 +82,20 @@ export default function BankingAndFinance() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <BookOpen className="h-10 w-10 text-red-600" />,
-                  title: "Comprehensive Curriculum",
-                  description: "Our program covers all aspects of modern banking and finance.",
+                  icon: <BookOpen className="h-6 w-6 text-red-600" />,
+                  title: "Financial Analysis",
+                  description: "Master modern financial analysis techniques"
                 },
                 {
-                  icon: <GraduationCap className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Experienced Faculty",
-                  description: "Learn from professionals with real-world financial sector experience.",
+                  icon: <GraduationCap className="h-6 w-6 text-red-600" />,
+                  title: "Banking Operations",
+                  description: "Learn core banking principles and practices"
                 },
                 {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Networking Opportunities",
-                  description: "Connect with industry leaders and fellow finance enthusiasts.",
-                },
+                  icon: <Users className="h-6 w-6 text-red-600" />,
+                  title: "Risk Management",
+                  description: "Understand and manage financial risks"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -116,24 +117,10 @@ export default function BankingAndFinance() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Banking & Finance program and pave the way for a successful career in the financial sector.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-400 to-red-500 text-white hover:from-yellow-500 hover:to-red-600 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 text-white border-2 border-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300 px-8 py-3 font-semibold rounded-lg shadow-md hover:shadow-lg">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Banking & Finance"
+          description="Join our Banking & Finance program and develop the expertise needed to excel in the dynamic world of financial services."
+        />
       </main>
       <Footer />
     </div>

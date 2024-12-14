@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Briefcase, TrendingUp, Globe } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function BusinessAdministration() {
   return (
@@ -76,20 +77,20 @@ export default function BusinessAdministration() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Briefcase className="h-10 w-10 text-red-600" />,
-                  title: "Practical Business Skills",
-                  description: "Develop real-world skills through case studies and internships.",
+                  icon: <Briefcase className="h-6 w-6 text-red-600" />,
+                  title: "Business Strategy",
+                  description: "Learn to develop and implement business strategies"
                 },
                 {
-                  icon: <TrendingUp className="h-10 w-10 text-red-600" />,
-                  title: "Career Growth Opportunities",
-                  description: "Prepare for leadership roles across various industries.",
+                  icon: <TrendingUp className="h-6 w-6 text-red-600" />,
+                  title: "Leadership Skills",
+                  description: "Develop essential management and leadership abilities"
                 },
                 {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Global Business Perspective",
-                  description: "Gain insights into international markets and business practices.",
-                },
+                  icon: <Globe className="h-6 w-6 text-red-600" />,
+                  title: "Global Business",
+                  description: "Understand international business practices"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -111,16 +112,10 @@ export default function BusinessAdministration() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Launch Your Business Career
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Business Administration program and develop the skills to become a successful business leader in today&apos;s competitive market.
-            </p>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Business Administration"
+          description="Join our Business Administration program and develop the skills to lead organizations into the future."
+        />
       </main>
       <Footer />
     </div>

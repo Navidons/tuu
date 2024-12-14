@@ -10,24 +10,24 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
-import { BookOpenIcon, NetworkIcon, LaptopIcon } from "lucide-react"
+import { BookOpenIcon, NetworkIcon, LaptopIcon, MessageCircle, Globe, Target } from "lucide-react"
 
 export default function PublicRelationsAndMediaManagement() {
   const whyChooseProgramItems = [
     {
-      icon: <BookOpenIcon className="h-8 w-8 text-blue-600" />,
-      title: "Comprehensive Curriculum",
-      description: "A holistic approach to public relations and media management that covers both theoretical and practical aspects."
+      icon: <MessageCircle className="h-6 w-6 text-red-600" />,
+      title: "Communication",
+      description: "Master strategic communication skills"
     },
     {
-      icon: <NetworkIcon className="h-8 w-8 text-blue-600" />,
-      title: "Industry Connections",
-      description: "Build valuable networks with media professionals and gain insights into the real-world communication landscape."
+      icon: <Globe className="h-6 w-6 text-red-600" />,
+      title: "Media Relations",
+      description: "Learn effective media management"
     },
     {
-      icon: <LaptopIcon className="h-8 w-8 text-blue-600" />,
-      title: "Digital Media Focus",
-      description: "Learn cutting-edge digital communication strategies and tools used by leading PR professionals."
+      icon: <Target className="h-6 w-6 text-red-600" />,
+      title: "Brand Strategy",
+      description: "Develop comprehensive PR strategies"
     }
   ];
 

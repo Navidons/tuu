@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 // Define the interface for the item
 interface ProgramItem {
@@ -106,24 +107,10 @@ export default function ComputerScience() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-red-800">
-              Start Your Tech Journey
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base text-gray-200">
-              Join our Computer Science program and become a part of the digital revolution shaping our world.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white shadow-lg transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white shadow-lg transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Tech Journey"
+          description="Join our Computer Science program and become a part of the digital revolution shaping our world."
+        />
       </main>
       <Footer />
     </div>

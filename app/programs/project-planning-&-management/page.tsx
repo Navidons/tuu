@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Target, Clock, Users } from "lucide-react"
+import { ChevronRight, Target, Clock, Users, BarChart } from "lucide-react"
 import Image from 'next/image'
 
 export default function ProjectPlanningAndManagement() {
@@ -80,20 +80,20 @@ export default function ProjectPlanningAndManagement() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Target className="h-10 w-10 text-red-600" />,
-                  title: "Strategic Planning",
-                  description: "Learn to develop and execute effective project strategies.",
+                  icon: <Target className="h-6 w-6 text-red-600" />,
+                  title: "Project Planning",
+                  description: "Master project planning methodologies"
                 },
                 {
-                  icon: <Clock className="h-10 w-10 text-red-600" />,
-                  title: "Efficient Execution",
-                  description: "Master techniques for on-time and within-budget project delivery.",
+                  icon: <Users className="h-6 w-6 text-red-600" />,
+                  title: "Team Leadership",
+                  description: "Lead and manage project teams effectively"
                 },
                 {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Leadership Skills",
-                  description: "Develop the ability to lead diverse project teams effectively.",
-                },
+                  icon: <BarChart className="h-6 w-6 text-red-600" />,
+                  title: "Risk Management",
+                  description: "Identify and mitigate project risks"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>

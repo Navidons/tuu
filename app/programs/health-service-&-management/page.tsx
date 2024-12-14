@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Stethoscope } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 interface ProgramItem {
   icon: JSX.Element;
@@ -123,24 +124,10 @@ export default function HealthServiceAndManagement() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-blue-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Transform Healthcare Delivery
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Health Service & Management program and become a leader in shaping the future of healthcare delivery and administration.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Health Service Management"
+          description="Join our Health Service & Management program and make a difference in healthcare delivery and administration."
+        />
       </main>
       <Footer />
     </div>

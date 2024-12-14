@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Truck, BarChart2, Globe } from "lucide-react"
+import { ChevronRight, Truck, BarChart2, Globe, ShoppingCart, Network } from "lucide-react"
 import Image from 'next/image'
 
 export default function ProcurementLogisticsSupplyChainManagement() {
@@ -80,20 +80,20 @@ export default function ProcurementLogisticsSupplyChainManagement() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Truck className="h-10 w-10 text-red-600" />,
-                  title: "Industry-Relevant Skills",
-                  description: "Gain practical skills in modern supply chain management and logistics.",
+                  icon: <ShoppingCart className="h-6 w-6 text-red-600" />,
+                  title: "Procurement",
+                  description: "Master strategic procurement practices"
                 },
                 {
-                  icon: <BarChart2 className="h-10 w-10 text-red-600" />,
-                  title: "Data-Driven Decision Making",
-                  description: "Learn to analyze data for optimizing supply chain operations.",
+                  icon: <Truck className="h-6 w-6 text-red-600" />,
+                  title: "Logistics",
+                  description: "Learn modern logistics management"
                 },
                 {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Global Perspective",
-                  description: "Understand international trade and global supply chain dynamics.",
-                },
+                  icon: <Network className="h-6 w-6 text-red-600" />,
+                  title: "Supply Chain",
+                  description: "Optimize supply chain operations"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>

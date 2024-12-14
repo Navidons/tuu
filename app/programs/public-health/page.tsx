@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Heart, Globe, Activity } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function PublicHealth() {
   return (
@@ -80,20 +81,20 @@ export default function PublicHealth() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Heart className="h-10 w-10 text-red-600" />,
-                  title: "Community Impact",
-                  description: "Make a difference in population health outcomes.",
+                  icon: <Heart className="h-6 w-6 text-red-600" />,
+                  title: "Community Health",
+                  description: "Learn to develop and implement community health programs"
                 },
                 {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
+                  icon: <Globe className="h-6 w-6 text-red-600" />,
                   title: "Global Perspective",
-                  description: "Address health challenges on a local and global scale.",
+                  description: "Understand public health challenges on a global scale"
                 },
                 {
-                  icon: <Activity className="h-10 w-10 text-red-600" />,
-                  title: "Research Opportunities",
-                  description: "Engage in cutting-edge public health research.",
-                },
+                  icon: <Activity className="h-6 w-6 text-red-600" />,
+                  title: "Health Policy",
+                  description: "Master the principles of health policy and management"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -115,24 +116,10 @@ export default function PublicHealth() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Shape the Future of Public Health
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Public Health program and become a leader in promoting health equity and improving population health outcomes.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Public Health"
+          description="Join our Public Health program and make a lasting impact on community health and well-being."
+        />
       </main>
       <Footer />
     </div>

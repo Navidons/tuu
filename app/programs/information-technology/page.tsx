@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Server, Shield, Globe } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function InformationTechnology() {
   return (
@@ -80,20 +81,20 @@ export default function InformationTechnology() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Server className="h-10 w-10 text-red-600" />,
-                  title: "Hands-On Experience",
-                  description: "Work with the latest technologies in our state-of-the-art IT labs.",
+                  icon: <Server className="h-6 w-6 text-red-600" />,
+                  title: "Infrastructure",
+                  description: "Master modern IT infrastructure and cloud computing"
                 },
                 {
-                  icon: <Shield className="h-10 w-10 text-red-600" />,
-                  title: "Cybersecurity Focus",
-                  description: "Gain expertise in protecting digital assets and information systems.",
+                  icon: <Shield className="h-6 w-6 text-red-600" />,
+                  title: "Cybersecurity",
+                  description: "Learn to protect systems and data from cyber threats"
                 },
                 {
-                  icon: <Globe className="h-10 w-10 text-red-600" />,
-                  title: "Industry Partnerships",
-                  description: "Benefit from our collaborations with leading tech companies.",
-                },
+                  icon: <Globe className="h-6 w-6 text-red-600" />,
+                  title: "Network Systems",
+                  description: "Design and manage enterprise network solutions"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -115,24 +116,10 @@ export default function InformationTechnology() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Become an IT Professional
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Information Technology program and gain the skills to lead in the digital transformation of businesses and organizations.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Apply Now
-              </Button>
-              <Button className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in IT"
+          description="Join our Information Technology program and become a leader in the digital transformation era."
+        />
       </main>
       <Footer />
     </div>

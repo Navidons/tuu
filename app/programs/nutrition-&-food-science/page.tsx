@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Apple, FlaskConical, Utensils } from "lucide-react"
+import { ChevronRight, Apple, FlaskConical, Heart, Utensils } from "lucide-react"
 import Image from 'next/image'
 
 export default function NutritionAndFoodScience() {
@@ -85,11 +85,21 @@ export default function NutritionAndFoodScience() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { title: "Human Nutrition", icon: <Apple /> },
-                { title: "Food Chemistry", icon: <FlaskConical /> },
-                { title: "Food Microbiology", icon: <Utensils /> },
-                { title: "Product Development", icon: <ChevronRight /> },
-                { title: "Food Safety and Quality Control", icon: <ChevronRight /> }
+                {
+                  icon: <Apple className="h-6 w-6 text-red-600" />,
+                  title: "Nutrition Science",
+                  description: "Study the science of nutrition and metabolism"
+                },
+                {
+                  icon: <FlaskConical className="h-6 w-6 text-red-600" />,
+                  title: "Food Analysis",
+                  description: "Learn modern food analysis techniques"
+                },
+                {
+                  icon: <Heart className="h-6 w-6 text-red-600" />,
+                  title: "Health Promotion",
+                  description: "Develop strategies for community nutrition"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -101,7 +111,7 @@ export default function NutritionAndFoodScience() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    {/* Optional: Add more details here */}
+                    {item.description}
                   </CardContent>
                 </Card>
               ))}

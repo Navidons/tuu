@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight, Leaf, BarChart, Users } from "lucide-react"
 import Image from 'next/image'
+import { CallToAction } from "../../components/program/CallToAction"
 
 export default function DevelopmentStudies() {
   return (
@@ -80,20 +81,20 @@ export default function DevelopmentStudies() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <Leaf className="h-10 w-10 text-red-600" />,
-                  title: "Sustainable Approach",
-                  description: "Learn to balance social, economic, and environmental factors in development.",
+                  icon: <Leaf className="h-6 w-6 text-red-600" />,
+                  title: "Sustainable Development",
+                  description: "Learn principles of sustainable community development"
                 },
                 {
-                  icon: <BarChart className="h-10 w-10 text-red-600" />,
-                  title: "Data-Driven Decision Making",
-                  description: "Develop skills in research and analysis for effective policy-making.",
+                  icon: <BarChart className="h-6 w-6 text-red-600" />,
+                  title: "Project Management",
+                  description: "Master development project planning and execution"
                 },
                 {
-                  icon: <Users className="h-10 w-10 text-red-600" />,
-                  title: "Community Engagement",
-                  description: "Learn participatory approaches to development projects.",
-                },
+                  icon: <Users className="h-6 w-6 text-red-600" />,
+                  title: "Social Impact",
+                  description: "Create positive change in communities worldwide"
+                }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
@@ -115,24 +116,10 @@ export default function DevelopmentStudies() {
           </div>
         </section>
 
-        <section className="py-8 md:py-12 bg-red-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Be a Catalyst for Change
-            </h2>
-            <p className="mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base">
-              Join our Development Studies program and become a driving force for sustainable development and social progress in communities around the world.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button className="w-full md:w-auto bg-red-500 text-white hover:bg-red-600 transition-colors">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="w-full md:w-auto bg-white text-red-800 hover:bg-red-100 border-red-500 transition-colors">
-                Request Information
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Start Your Journey in Development Studies"
+          description="Join our Development Studies program and become a catalyst for positive social change and sustainable development."
+        />
       </main>
       <Footer />
     </div>

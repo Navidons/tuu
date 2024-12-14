@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card"
 import { ChevronRight } from "lucide-react"
 import Image from 'next/image'
+import { Building2, Users, Target } from "lucide-react"
 
 export default function PublicAdministrationAndManagement() {
   return (
@@ -80,22 +81,25 @@ export default function PublicAdministrationAndManagement() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Expert Faculty",
-                  description: "Learn from experienced professionals with extensive public sector backgrounds."
+                  icon: <Building2 className="h-6 w-6 text-red-600" />,
+                  title: "Public Policy",
+                  description: "Learn public policy development and analysis"
                 },
                 {
-                  title: "Practical Curriculum",
-                  description: "Gain hands-on skills through case studies, simulations, and real-world projects."
+                  icon: <Users className="h-6 w-6 text-red-600" />,
+                  title: "Leadership",
+                  description: "Develop public sector leadership skills"
                 },
                 {
-                  title: "Career Opportunities",
-                  description: "Prepare for leadership roles in government, non-profits, and international organizations."
+                  icon: <Target className="h-6 w-6 text-red-600" />,
+                  title: "Governance",
+                  description: "Master principles of good governance"
                 }
               ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">
-                      <ChevronRight className="h-10 w-10 text-blue-600" />
+                      {item.icon}
                       <div>
                         {item.title}
                       </div>

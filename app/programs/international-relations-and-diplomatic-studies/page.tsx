@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Globe, Users, Briefcase } from "lucide-react"
+import { ChevronRight, Globe, Users, Briefcase, Target } from "lucide-react"
 import Image from 'next/image'
 
 interface ProgramItem {
@@ -20,19 +20,19 @@ interface ProgramItem {
 export default function InternationalRelationsAndDiplomaticStudies() {
   const programItems: ProgramItem[] = [
     {
-      icon: <Globe className="h-10 w-10 text-red-600" />,
-      title: "Global Perspective",
-      description: "Gain insights into international politics and global affairs.",
+      icon: <Globe className="h-6 w-6 text-red-600" />,
+      title: "Global Politics",
+      description: "Understand international political dynamics",
     },
     {
-      icon: <Users className="h-10 w-10  text-red-600" />,
-      title: "Diplomatic Skills",
-      description: "Develop negotiation and cross-cultural communication skills.",
+      icon: <Users className="h-6 w-6 text-red-600" />,
+      title: "Diplomacy",
+      description: "Master diplomatic practices and negotiations",
     },
     {
-      icon: <Briefcase className="h-10 w-10 text-red-600" />,
-      title: "Career Opportunities",
-      description: "Prepare for roles in diplomacy, international organizations, and global NGOs.",
+      icon: <Target className="h-6 w-6 text-red-600" />,
+      title: "Policy Analysis",
+      description: "Learn international policy analysis methods",
     },
   ];
 
