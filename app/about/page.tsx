@@ -4,6 +4,7 @@ import { Footer } from "../static-components/footer/Footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Book, Users, Building, Globe, Award } from "lucide-react"
+import { CallToAction } from "../components/program/CallToAction"
 
 export default function AboutPage() {
   return (
@@ -180,28 +181,10 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-8 md:py-16 lg:py-20 bg-red-600 text-white">
-          <div className="container px-4 md:px-6 mx-auto">
-            <div className="flex flex-col items-center justify-center space-y-6 text-center">
-              <div className="space-y-4">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter animate-fade-in-down">
-                  Join Our Community
-                </h2>
-                <p className="mx-auto max-w-[600px] text-sm md:text-base lg:text-xl text-red-100 leading-relaxed animate-fade-in-up">
-                  Whether you're a prospective student, a potential partner, or simply interested in learning more about The Unity University, we'd love to hear from you. Take the next step in your journey with us.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4 animate-bounce">
-                <Button className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white hover:from-yellow-500 hover:via-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Apply Now
-                </Button>
-                <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 text-white hover:from-blue-500 hover:via-indigo-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Contact Us
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Begin Your Academic Journey"
+          description="Join The Unity University and be part of our diverse, innovative learning community. Take the next step towards your future today."
+        />
       </main>      
       <Footer />
     </div>

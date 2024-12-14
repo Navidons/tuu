@@ -8,12 +8,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useState, useEffect } from 'react';
-
-import { ApplyNowButton } from "./buttons/apply-now-button";
-import { ApplyForAdmissionButton } from "./buttons/apply-for-admission-button";
-import { RequestInformationButton } from "./buttons/request-information-button";
 import Image from 'next/image';
 import { TVSlideshow } from './components/TVSlideshow';
+import { CallToAction } from "./components/program/CallToAction";
 
 const carouselData = [
   {
@@ -155,9 +152,6 @@ export default function LandingPage() {
                     <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto transform transition-transform duration-700 translate-y-0">
                       {slide.subtitle}
                     </p>
-                    <div className="flex gap-4 justify-center animate-bounce">
-                      <ApplyNowButton />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -253,37 +247,11 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-gradient-to-br from-red-600 to-red-700 relative overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_theme(colors.red.500/0.1),_transparent_50%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_theme(colors.red.900/0.1),_transparent_50%)]" />
-          </div>
-          <div className="container mx-auto px-4 relative">
-            <div className="max-w-3xl mx-auto text-center space-y-8">
-              <span className="inline-block px-4 py-1 bg-white/10 text-white rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
-                Your Future Starts Here
-              </span>
-              <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.1)]">
-                Start Your Journey Today
-              </h2>
-              <p className="text-xl text-red-50 leading-relaxed max-w-2xl mx-auto">
-                Join our vibrant community of learners and innovators. Take the first step towards your future in excellence.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-4">
-                <div className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-                  <ApplyForAdmissionButton 
-                    className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                  />
-                </div>
-                <div className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-                  <RequestInformationButton />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CallToAction 
+          title="Shape Your Future at The Unity University"
+          description="Join our vibrant academic community and embark on a journey of excellence, innovation, and personal growth."
+        />
       </main>
-
       <Footer />
     </div>
   );

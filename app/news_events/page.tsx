@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calendar, Search, Globe,} from "lucide-react"
-import { ReadMoreNewsEventButton } from "../buttons/read-more-news-event-button"
 import Image from 'next/image'
 
 const newsAndEvents = [
@@ -149,7 +148,6 @@ export default function NewsAndEventsPage() {
                           </CardHeader>
                           <CardContent>
                             <p className="text-sm text-gray-500">{item.description}</p>
-                            <ReadMoreNewsEventButton item={item} />
                           </CardContent>
                         </Card>
                       ))}
