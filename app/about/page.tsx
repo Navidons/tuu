@@ -1,8 +1,7 @@
 "use client"
 import { Header } from "../static-components/header/Header"
 import { Footer } from "../static-components/footer/Footer"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Book, Users, Building, Globe, Award } from "lucide-react"
 import { CallToAction } from "../components/program/CallToAction"
 import Image from 'next/image'
