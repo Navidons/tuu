@@ -12,11 +12,6 @@ import { ChevronRight, TrendingUp, Globe, Target } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
-type ProgramItemType = {
-  icon: JSX.Element;
-  title: string;
-}
-
 export default function Marketing() {
   return (
     <div className="flex flex-col min-h-screen">

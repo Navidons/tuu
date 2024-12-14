@@ -12,13 +12,6 @@ import { ChevronRight, Code, Database, Network } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
-// Define the type for the item
-type ProgramItemType = {
-  icon: JSX.Element;
-  title: string;
-  description: string;
-}
-
 export default function ComputerScience() {
   return (
     <div className="flex flex-col min-h-screen">
