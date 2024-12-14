@@ -29,9 +29,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to a server
     console.log('Form submitted:', formData)
-    // Reset form after submission
     setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
@@ -39,160 +37,167 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center relative">
-          <Image src="/hero-section/hero.png" alt="University Banner" layout="fill" objectFit="cover" className="absolute inset-0" />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="container px-4 md:px-6 relative z-10">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none animate-fade-in-down text-white">
-                  Contact Us
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl animate-fade-in-up">
-                  We're here to help. Get in touch with us for any inquiries or information.
-                </p>
-              </div>
+        {/* Hero Section */}
+        <section className="w-full h-[40vh] bg-cover bg-center relative">
+          <Image 
+            src="/hero-section/hero.png" 
+            alt="Contact Banner" 
+            layout="fill" 
+            objectFit="cover" 
+            className="absolute inset-0"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
+          <div className="container relative z-10 h-full flex items-center justify-center px-4">
+            <div className="text-center space-y-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+                Get in Touch
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                We're here to help and answer any questions you might have
+              </p>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl animate-fade-in-left">
-                  Get in Touch
-                </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We value your feedback and inquiries. Please fill out the form, and we'll get back to you as soon as possible.
-                </p>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">
-                      Name
-                    </Label>
-                    <Input 
-                      id="name" 
-                      name="name" 
-                      placeholder="Your Name" 
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required 
-                    />
+
+        {/* Main Content */}
+        <section className="py-16 bg-gray-50">
+          <div className="container px-4 mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Contact Form */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tight">Send us a Message</h2>
+                  <p className="text-gray-600">Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="name" className="text-sm font-medium">Name</Label>
+                        <Input
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          className="w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
+                          placeholder="John Doe"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          className="w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
+                          placeholder="john@example.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="subject" className="text-sm font-medium">Subject</Label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        className="w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
+                        placeholder="How can we help?"
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-sm font-medium">Message</Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        className="min-h-[150px] w-full transition-all duration-200 focus:ring-2 focus:ring-red-500"
+                        placeholder="Your message here..."
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">
-                      Email
-                    </Label>
-                    <Input 
-                      id="email" 
-                      name="email" 
-                      placeholder="your@email.com" 
-                      type="email" 
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required 
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">
-                      Subject
-                    </Label>
-                    <Input 
-                      id="subject" 
-                      name="subject" 
-                      placeholder="Subject" 
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      required 
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">
-                      Message
-                    </Label>
-                    <Textarea 
-                      id="message" 
-                      name="message" 
-                      placeholder="Your message" 
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required 
-                    />
-                  </div>
-                  <Button type="submit" className="w-full animate-pulse">
+                  <Button 
+                    type="submit"
+                    className="w-full bg-red-600 hover:bg-red-700 text-white transition-colors duration-200"
+                  >
                     Send Message
                   </Button>
                 </form>
               </div>
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl animate-fade-in-right">
-                  Contact Information
-                </h2>
-                <div className="grid gap-4">
-                  <Card>
-                    <CardHeader className="flex flex-row items-center gap-4">
-                      <MapPin className="w-8 h-8 text-red-600" />
-                      <CardTitle>
-                        Address
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p>
-                      JigJiga Yar Street near Masjid Jabir, Hargeisa, Somaliland
-                      </p>
+
+              {/* Contact Information */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tight">Contact Information</h2>
+                  <p className="text-gray-600">Choose the most convenient way to reach us.</p>
+                </div>
+
+                <div className="grid gap-6">
+                  {/* Contact Cards */}
+                  <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-200">
+                    <CardContent className="flex items-center space-x-4 p-6">
+                      <div className="p-3 bg-red-100 rounded-full">
+                        <Mail className="h-6 w-6 text-red-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">Email Us</h3>
+                        <p className="text-sm text-gray-600">info@university.edu</p>
+                      </div>
                     </CardContent>
                   </Card>
-                  <Card>
-                    <CardHeader className="flex flex-row items-center gap-4">
-                      <Phone className="w-8 h-8 text-red-600" />
-                      <CardTitle>
-                        Phone
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p>
-                      +252 63 6359696
-                      </p>
+
+                  <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-200">
+                    <CardContent className="flex items-center space-x-4 p-6">
+                      <div className="p-3 bg-red-100 rounded-full">
+                        <Phone className="h-6 w-6 text-red-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">Call Us</h3>
+                        <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                      </div>
                     </CardContent>
                   </Card>
-                  <Card>
-                    <CardHeader className="flex flex-row items-center gap-4">
-                      <Mail className="w-8 h-8 text-red-600" />
-                      <CardTitle>
-                        Email
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p>
-                      info@tuu.university
-                      </p>
+
+                  <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-200">
+                    <CardContent className="flex items-center space-x-4 p-6">
+                      <div className="p-3 bg-red-100 rounded-full">
+                        <MapPin className="h-6 w-6 text-red-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">Visit Us</h3>
+                        <p className="text-sm text-gray-600">123 University Ave, City, State 12345</p>
+                      </div>
                     </CardContent>
                   </Card>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">
-                    Follow Us
-                  </h3>
+
+                {/* Social Media Links */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold">Follow Us</h3>
                   <div className="flex space-x-4">
-                    <Link href="https://www.facebook.com/theunityuniversity/" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-                      <Facebook className="h-6 w-6" />
-                      <span className="sr-only">Facebook</span>
+                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                      <Facebook className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="https://x.com/ProfPLOLumumba/status/1605872680317616128?lang=en" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-                      <Twitter className="h-6 w-6" />
-                      <span className="sr-only">Twitter</span>
+                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                      <Twitter className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="https://www.instagram.com/p/Cmd3K5Oj1D1/?img_index=1" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-                      <Instagram className="h-6 w-6" />
-                      <span className="sr-only">Instagram</span>
+                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                      <Linkedin className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="https://www.linkedin.com/company/the-unity-university/?originalSubdomain=so" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="h-6 w-6" />
-                      <span className="sr-only">LinkedIn</span>
+                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                      <Instagram className="h-5 w-5 text-red-600" />
                     </Link>
-                    <Link href="https://www.youtube.com/watch?v=8vBnxHefYZs" className="hover:text-red-400 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
-                      <Youtube className="h-6 w-6" />
-                      <span className="sr-only">YouTube</span>
+                    <Link href="#" className="p-2 bg-red-50 rounded-full hover:bg-red-100 transition-colors duration-200">
+                      <Youtube className="h-5 w-5 text-red-600" />
                     </Link>
                   </div>
                 </div>
@@ -200,80 +205,15 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-red-50">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 animate-fade-in-down">
-              Frequently Asked Questions
-            </h2>
-            <div className="grid gap-6 lg:grid-cols-2">
-              <Card className="animate-fade-in-left">
-                <CardHeader>
-                  <CardTitle>
-                    How can I apply to The Unity University?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Visit our Admissions page for detailed information on the application process, requirements, and deadlines.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="animate-fade-in-right">
-                <CardHeader>
-                  <CardTitle>
-                    What scholarships are available?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    We offer various merit-based and need-based scholarships. Check our Financial Aid page for more information.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="animate-fade-in-left">
-                <CardHeader>
-                  <CardTitle>
-                    Are there accommodation options for students?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Yes, we provide on-campus housing for students. Visit our Student Life page to learn about accommodation options.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="animate-fade-in-right">
-                <CardHeader>
-                  <CardTitle>
-                    How can I request a campus tour?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    You can schedule a campus tour through our Admissions Office. Contact them directly or use the form on this page.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 animate-fade-in-down">
-              Our Location
-            </h2>
-            <div className="aspect-video overflow-hidden rounded-xl animate-fade-in-up">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15736.79006234156!2d44.0332504!3d9.5782359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1628bf060db4b1e3%3A0x35127f7dd280f4ae!2sTHE%20UNITY%20UNIVERSITY!5e0!3m2!1sen!2sca!4v1729921796797!5m2!1sen!2sca"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
+
+        {/* Map Section */}
+        <section className="w-full h-[400px] bg-gray-200 relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2s!4v1639458283805!5m2!1sen!2s"
+            className="w-full h-full border-0"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </section>
       </main>
       <Footer />
