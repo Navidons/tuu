@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Leaf, BarChart, Users } from "lucide-react"
+import { ChevronRight, Leaf, Target, Users } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -86,7 +86,7 @@ export default function DevelopmentStudies() {
                   description: "Learn principles of sustainable community development"
                 },
                 {
-                  icon: <BarChart className="h-6 w-6 text-red-600" />,
+                  icon: <Target className="h-6 w-6 text-red-600" />,
                   title: "Project Management",
                   description: "Master development project planning and execution"
                 },

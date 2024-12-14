@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Heart, Globe, Activity } from "lucide-react"
+import { ChevronRight, Heart, Users, Globe } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -91,7 +91,7 @@ export default function PublicHealth() {
                   description: "Understand public health challenges on a global scale"
                 },
                 {
-                  icon: <Activity className="h-6 w-6 text-red-600" />,
+                  icon: <Users className="h-6 w-6 text-red-600" />,
                   title: "Health Policy",
                   description: "Master the principles of health policy and management"
                 }

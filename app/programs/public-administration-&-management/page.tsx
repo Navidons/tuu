@@ -8,9 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Building2, Users, Target } from "lucide-react"
 import Image from 'next/image'
-import { Building2, Users, Target } from "lucide-react"
 
 export default function PublicAdministrationAndManagement() {
   return (

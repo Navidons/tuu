@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Code, Database, Network } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -86,7 +86,23 @@ export default function ComputerScience() {
               Why Choose Our Program?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {[/* Removed Somali language content */].map((item: ProgramItem, index) => (
+              {[
+                {
+                  icon: <Code className="h-6 w-6 text-red-600" />,
+                  title: "Programming",
+                  description: "Master modern programming languages and techniques"
+                },
+                {
+                  icon: <Database className="h-6 w-6 text-red-600" />,
+                  title: "Data Management",
+                  description: "Learn database design and implementation"
+                },
+                {
+                  icon: <Network className="h-6 w-6 text-red-600" />,
+                  title: "Networking",
+                  description: "Understand computer networks and security"
+                }
+              ].map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-4">

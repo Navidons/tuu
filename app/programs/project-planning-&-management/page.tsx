@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Target, Clock, Users, BarChart } from "lucide-react"
+import { ChevronRight, Target, Users, BarChart } from "lucide-react"
 import Image from 'next/image'
 
 export default function ProjectPlanningAndManagement() {

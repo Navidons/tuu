@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Apple, FlaskConical, Heart, Utensils } from "lucide-react"
+import { ChevronRight, Apple, FlaskConical, Heart } from "lucide-react"
 import Image from 'next/image'
 
 export default function NutritionAndFoodScience() {
@@ -51,7 +51,7 @@ export default function NutritionAndFoodScience() {
                   {[
                     { title: "Human Nutrition", icon: <Apple /> },
                     { title: "Food Chemistry", icon: <FlaskConical /> },
-                    { title: "Food Microbiology", icon: <Utensils /> },
+                    { title: "Food Microbiology", icon: <ChevronRight /> },
                     { title: "Product Development", icon: <ChevronRight /> },
                     { title: "Food Safety and Quality Control", icon: <ChevronRight /> }
                   ].map((item, index) => (

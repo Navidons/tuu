@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Users, Lightbulb, Target } from "lucide-react"
+import { ChevronRight, GraduationCap, Lightbulb, Target, Users } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 

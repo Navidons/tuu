@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Code, Layers, Users } from "lucide-react"
+import { ChevronRight, Code, Database, Users } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -86,9 +86,9 @@ export default function SoftwareEngineering() {
                   description: "Learn advanced software design principles and architectural patterns"
                 },
                 {
-                  icon: <Layers className="h-6 w-6 text-red-600" />,
-                  title: "Technology Stack",
-                  description: "Master modern programming languages and development frameworks"
+                  icon: <Database className="h-6 w-6 text-red-600" />,
+                  title: "Database Systems",
+                  description: "Master modern database management systems and technologies"
                 },
                 {
                   icon: <Users className="h-6 w-6 text-red-600" />,

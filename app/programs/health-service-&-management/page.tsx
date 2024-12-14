@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Stethoscope } from "lucide-react"
+import { ChevronRight, Heart, Building, Users } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -20,17 +20,17 @@ interface ProgramItem {
 
 const programItems: ProgramItem[] = [
   {
-    icon: <Stethoscope className="w-6 h-6 text-blue-800" />,
+    icon: <Heart className="w-6 h-6 text-blue-800" />,
     title: "Healthcare Management",
     description: "Learn about managing healthcare systems efficiently."
   },
   {
-    icon: <Stethoscope className="w-6 h-6 text-blue-800" />,
+    icon: <Building className="w-6 h-6 text-blue-800" />,
     title: "Clinical Services",
     description: "Understand the intricacies of clinical service management."
   },
   {
-    icon: <Stethoscope className="w-6 h-6 text-blue-800" />,
+    icon: <Users className="w-6 h-6 text-blue-800" />,
     title: "Hospital Administration",
     description: "Master the skills needed for effective hospital administration."
   }

@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, BookOpen, Target, Users } from "lucide-react"
+import { ChevronRight, GraduationCap, Target, LineChart } from "lucide-react"
 import Image from 'next/image'
 
 // Define the interface for the item
@@ -21,7 +21,7 @@ interface ProgramCardItem {
 // Ensure the array is explicitly typed
 const programItems: ProgramCardItem[] = [
   {
-    icon: <BookOpen className="h-6 w-6 text-red-600" />,
+    icon: <GraduationCap className="h-6 w-6 text-red-600" />,
     title: "Policy Development",
     description: "Learn to create and implement education policies"
   },
@@ -31,7 +31,7 @@ const programItems: ProgramCardItem[] = [
     description: "Master educational planning and resource allocation"
   },
   {
-    icon: <Users className="h-6 w-6 text-red-600" />,
+    icon: <LineChart className="h-6 w-6 text-red-600" />,
     title: "Leadership Skills",
     description: "Develop skills to lead educational institutions"
   }

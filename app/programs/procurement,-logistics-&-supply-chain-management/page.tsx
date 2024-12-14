@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Truck, BarChart2, Globe, ShoppingCart, Network } from "lucide-react"
+import { ChevronRight, Truck, ShoppingCart, Network } from "lucide-react"
 import Image from 'next/image'
 
 export default function ProcurementLogisticsSupplyChainManagement() {

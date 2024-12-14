@@ -8,9 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, MessageCircle, Globe, Target } from "lucide-react"
 import Image from 'next/image'
-import { BookOpenIcon, NetworkIcon, LaptopIcon, MessageCircle, Globe, Target } from "lucide-react"
 
 export default function PublicRelationsAndMediaManagement() {
   const whyChooseProgramItems = [

@@ -8,9 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Users, Heart, Building } from "lucide-react"
 import Image from 'next/image'
-import { Users, Heart, Building } from "lucide-react"
 
 export default function SocialWorkAndSocialAdministration() {
   const whyChooseProgramItems = [

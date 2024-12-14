@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { ChevronRight, Users, Briefcase, TrendingUp } from "lucide-react"
+import { ChevronRight, Users, Handshake, Target } from "lucide-react"
 import Image from 'next/image'
 import { CallToAction } from "../../components/program/CallToAction"
 
@@ -86,12 +86,12 @@ export default function HumanResourceManagement() {
                   description: "Master strategies for attracting and retaining talent"
                 },
                 {
-                  icon: <Briefcase className="h-6 w-6 text-red-600" />,
+                  icon: <Handshake className="h-6 w-6 text-red-600" />,
                   title: "Employee Relations",
                   description: "Learn to build positive workplace relationships"
                 },
                 {
-                  icon: <TrendingUp className="h-6 w-6 text-red-600" />,
+                  icon: <Target className="h-6 w-6 text-red-600" />,
                   title: "Strategic HR",
                   description: "Develop HR strategies aligned with business goals"
                 }
