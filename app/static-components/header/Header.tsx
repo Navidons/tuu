@@ -194,7 +194,7 @@ export function Header() {
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-600">
               <Phone className="h-4 w-4"/>
-              <span>+252 63 6359696</span>
+              <span>+252 63 4210013</span>
             </div>
             <div className="text-sm text-gray-600">
               <span className="font-medium">Welcome to The Unity University</span>
